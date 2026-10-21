@@ -1,0 +1,59 @@
+x-spark: &spark
+  image: quay.io/jupyter/pyspark-notebook:spark-3.5.0
+  user: root                     
+  environment: &env
+    NB_UID: ${HOST_UID:-1000}
+    NB_GID: ${HOST_GID:-100}
+  volumes:
+    - .:/home/jovyan/work
+  working_dir: /home/jovyan/work
+
+services:
+  spark-master:
+    <<: *spark
+    hostname: spark-master
+    command: /usr/local/spark/bin/spark-class org.apache.spark.deploy.master.Master
+             --host spark-master --port 7077 --webui-port 8080
+    ports:
+      - "8080:8080"
+
+  spark-worker:
+    <<: *spark
+    hostname: spark-worker
+    depends_on: [spark-master]
+    environment:
+      <<: *env
+      SPARK_WORKER_CORES: ${SPARK_WORKER_CORES:-2}
+      SPARK_WORKER_MEMORY: ${SPARK_WORKER_MEMORY:-2g}
+    command: /usr/local/spark/bin/spark-class org.apache.spark.deploy.worker.Worker
+             spark://spark-master:7077 --work-dir /tmp/spark-work --webui-port 8081
+    ports:
+      - "8081:8081"
+
+  spark-worker-2:
+    <<: *spark
+    hostname: spark-worker-2
+    depends_on: [spark-master]
+    environment:
+      <<: *env
+      SPARK_WORKER_CORES: ${SPARK_WORKER_CORES:-2}
+      SPARK_WORKER_MEMORY: ${SPARK_WORKER_MEMORY:-2g}
+    command: /usr/local/spark/bin/spark-class org.apache.spark.deploy.worker.Worker
+             spark://spark-master:7077 --work-dir /tmp/spark-work --webui-port 8081
+    ports:
+      - "8082:8081"
+
+  jupyter:
+    <<: *spark
+    hostname: jupyter
+    depends_on: [spark-master, spark-worker]
+    environment:
+      <<: *env
+      spark_master: spark://spark-master:7077
+      PYTHONPATH: /usr/local/spark/python:/usr/local/spark/python/lib/py4j-0.10.9.7-src.zip
+      SPARK_DRIVER_MEMORY: ${SPARK_DRIVER_MEMORY:-2g}
+      SPARK_EXECUTOR_MEMORY: ${SPARK_EXECUTOR_MEMORY:-2g}
+    command: start-notebook.sh --IdentityProvider.token= --ServerApp.root_dir=/home/jovyan/work
+    ports:
+      - "8888:8888"
+      - "4040:4040"

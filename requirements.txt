@@ -1,0 +1,15 @@
+requests==2.34.2
+certifi==2026.7.22
+charset-normalizer==3.5.1
+idna==3.19
+urllib3==2.7.0
+pandas
+matplotlib
+pyarrow
+numpy<2; python_version < "3.13"
+numpy; python_version >= "3.13"
+mlxtend
+pyspark==3.5.0
+notebook
+nbconvert
+ipykernel
