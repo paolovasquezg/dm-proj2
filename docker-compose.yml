@@ -1,6 +1,6 @@
 x-spark: &spark
   image: quay.io/jupyter/pyspark-notebook:spark-3.5.0
-  user: root                     
+  user: root
   environment: &env
     NB_UID: ${HOST_UID:-1000}
     NB_GID: ${HOST_GID:-100}
@@ -13,7 +13,7 @@ services:
     <<: *spark
     hostname: spark-master
     command: /usr/local/spark/bin/spark-class org.apache.spark.deploy.master.Master
-             --host spark-master --port 7077 --webui-port 8080
+      --host spark-master --port 7077 --webui-port 8080
     ports:
       - "8080:8080"
 
@@ -23,10 +23,10 @@ services:
     depends_on: [spark-master]
     environment:
       <<: *env
-      SPARK_WORKER_CORES: ${SPARK_WORKER_CORES:-2}
+      SPARK_WORKER_CORES: ${SPARK_WORKER_CORES:-1}
       SPARK_WORKER_MEMORY: ${SPARK_WORKER_MEMORY:-2g}
     command: /usr/local/spark/bin/spark-class org.apache.spark.deploy.worker.Worker
-             spark://spark-master:7077 --work-dir /tmp/spark-work --webui-port 8081
+      spark://spark-master:7077 --work-dir /tmp/spark-work --webui-port 8081
     ports:
       - "8081:8081"
 
@@ -36,10 +36,10 @@ services:
     depends_on: [spark-master]
     environment:
       <<: *env
-      SPARK_WORKER_CORES: ${SPARK_WORKER_CORES:-2}
+      SPARK_WORKER_CORES: ${SPARK_WORKER_CORES:-1}
       SPARK_WORKER_MEMORY: ${SPARK_WORKER_MEMORY:-2g}
     command: /usr/local/spark/bin/spark-class org.apache.spark.deploy.worker.Worker
-             spark://spark-master:7077 --work-dir /tmp/spark-work --webui-port 8081
+      spark://spark-master:7077 --work-dir /tmp/spark-work --webui-port 8081
     ports:
       - "8082:8081"
 
