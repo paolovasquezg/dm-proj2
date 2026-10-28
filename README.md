@@ -49,7 +49,15 @@ Levanta el cluster de Spark y Jupyter con Docker
 
 ### 1. Transformaciones
 
-- 01_Trans/KDD/a_planteamiento.ipynb
-- 01_Trans/KDD/b_transformaciones.ipynb
-- 01_Trans/KDD/c_uso.ipynb
-- 01_Trans/KDD/d_recuento.ipynb
+- 01_Trans/a_planteamiento.ipynb
+- 01_Trans/b_transformaciones.ipynb
+- 01_Trans/c_uso.ipynb
+- 01_Trans/d_recuento.ipynb
+
+### 2. Clustering
+
+- 02_Clustering/a_preparacion.ipynb
+- 02_Clustering/b_kmeans.ipynb
+- 02_Clustering/c_densidad.ipynb
+- 02_Clustering/d_jerarquico.ipynb
+- 02_Clustering/e_analisis.ipynb
