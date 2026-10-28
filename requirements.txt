@@ -13,3 +13,6 @@ pyspark==3.5.0
 notebook
 nbconvert
 ipykernel
+scikit-learn
+scipy
+seaborn

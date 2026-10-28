@@ -59,6 +59,12 @@ Levanta el cluster de Spark (1 master, 2 workers) y Jupyter con Docker
 - `01_Trans/c_uso.ipynb`: artefactos en `data/artefactos/`, particionamiento y validación de integridad
 - `01_Trans/d_recuento.ipynb`: recuento y limitaciones
 
+### 2. Clustering y anomalías (Parte II)
+
+- `02_Clustering/a_preparacion.ipynb`: preguntas de interés, features, estandarización y PCA
+- `02_Clustering/b_modelos.ipynb`: KMeans++ (selección de k), DBSCAN (calibración de eps) y jerárquico Ward
+- `02_Clustering/c_interpretacion.ipynb`: arquetipos, anomalías, banderas de auditoría, encuadre ético y exportación
+
 **Validación manual de la resolución de entidades:** `b_transformaciones` genera `01_Trans/er_validacion.csv` la
 primera vez. Completar la columna `mismo_actor` (1 = mismo actor, 0 = distinto) y re-ejecutar el notebook para
 obtener la precisión por estrato. El archivo no se sobrescribe.
@@ -74,6 +80,7 @@ obtener la precisión por estrato. El archivo no se sobrescribe.
 | `grafo_coparticipacion/{vertices,aristas}` | Proveedores que participan juntos en ≥ 2 procesos | V |
 | `grafo_coparticipacion_sin_hubs/{vertices,aristas}` | Ídem, sin proveedores con grado sobre el p99 | V, VI |
 | `grafo_knn/{vertices,aristas}` | k vecinos más cercanos sobre `features_proveedor` estandarizado | VI |
+| `clustering_proveedores.parquet` | PCA 2D, arquetipo, clúster DBSCAN, banderas y etiquetas para k = 2…8 y la grilla de eps | VII (web) |
 
 Lectura:
 
