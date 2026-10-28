@@ -26,6 +26,8 @@ Para descargar la data:
 python3 data/download.py
 ```
 
+O, alternativamente, descarga el zip desde este [link](https://drive.google.com/file/d/1hOH8VOX3JpZ3KjaiOaReZ37mXi0-Sg8J/view?usp=sharing), descomprimelo y colocalo en la carpeta [`data/`](data/)
+
 ## Pipeline
 
 Ejecutar todo el flujo en orden, o alternativamente correr:
