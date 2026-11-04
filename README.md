@@ -63,3 +63,11 @@ Levanta el cluster de Spark y Jupyter con Docker
 - 02_Clustering/c_densidad.ipynb
 - 02_Clustering/d_jerarquico.ipynb
 - 02_Clustering/e_analisis.ipynb
+
+### 3. Recomendación
+
+- 03_Recomendacion/a_preparacion_split.ipynb
+- 03_Recomendacion/b_baseline_als.ipynb
+- 03_Recomendacion/c_contenido_ann.ipynb
+- 03_Recomendacion/d_hibrido_evaluacion.ipynb
+- 03_Recomendacion/e_analisis_sustitutos.ipynb

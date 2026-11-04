@@ -21,6 +21,9 @@ jupyter nbconvert --to notebook --execute --inplace docker.ipynb
 
 docker compose exec -T jupyter sh -c 'chmod -R a+rwX /home/jovyan/work/data /home/jovyan/work/0* /home/jovyan/work/funciones.ipynb'
 
+echo "== Dependencias en el contenedor =="
+docker compose exec -T jupyter pip install -q hnswlib
+
 echo "== 0. EDA =="
 
 # 1. EDA
@@ -44,5 +47,17 @@ docker compose exec -T -u jovyan jupyter jupyter nbconvert --to notebook --execu
 docker compose exec -T -u jovyan jupyter jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=$TIMEOUT 02_Clustering/c_densidad.ipynb
 docker compose exec -T -u jovyan jupyter jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=$TIMEOUT 02_Clustering/d_jerarquico.ipynb
 docker compose exec -T -u jovyan jupyter jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=$TIMEOUT 02_Clustering/e_analisis.ipynb
+
+echo "== 3. Recomendacion =="
+
+# 4. Recomendacion
+docker compose exec -T -u jovyan jupyter jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=$TIMEOUT 03_Recomendacion/a_preparacion_split.ipynb
+docker compose exec -T -u jovyan jupyter jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=$TIMEOUT 03_Recomendacion/b_baseline_als.ipynb
+docker compose exec -T -u jovyan jupyter jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=$TIMEOUT 03_Recomendacion/c_contenido_ann.ipynb
+docker compose exec -T -u jovyan jupyter jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=$TIMEOUT 03_Recomendacion/d_hibrido_evaluacion.ipynb
+docker compose exec -T -u jovyan jupyter jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=$TIMEOUT 03_Recomendacion/e_analisis_sustitutos.ipynb
+docker compose exec -T -u jovyan jupyter jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=$TIMEOUT PLACEHOLDER
+docker compose exec -T -u jovyan jupyter jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=$TIMEOUT PLACEHOLDER
+docker compose exec -T -u jovyan jupyter jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=$TIMEOUT PLACEHOLDER
 
 echo "== Pipeline terminado =="
