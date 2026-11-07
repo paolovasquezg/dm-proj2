@@ -63,3 +63,13 @@ Levanta el cluster de Spark y Jupyter con Docker
 - 02_Clustering/c_densidad.ipynb
 - 02_Clustering/d_jerarquico.ipynb
 - 02_Clustering/e_analisis.ipynb
+
+
+### 4. PageRank y HITS
+
+- 04_PAGERANKHITS/a_grafo.ipynb
+- 04_PAGERANKHITS/b_pagerank.ipynb
+- 04_PAGERANKHITS/c_hits.ipynb
+- 04_PAGERANKHITS/d_analisis.ipynb
+
+`b_pagerank` descarga GraphFrames (`graphframes:graphframes:0.8.3-spark3.5-s_2.12`) al crear la sesión; sin red, corre igual con la implementación propia.
