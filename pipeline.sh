@@ -45,4 +45,14 @@ docker compose exec -T -u jovyan jupyter jupyter nbconvert --to notebook --execu
 docker compose exec -T -u jovyan jupyter jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=$TIMEOUT 02_Clustering/d_jerarquico.ipynb
 docker compose exec -T -u jovyan jupyter jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=$TIMEOUT 02_Clustering/e_analisis.ipynb
 
+echo "== 3. Recomendación =="
+
+# 4. Recomendación
+docker compose exec -T -u jovyan jupyter jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=$TIMEOUT 03_Recomend/a_preparacion.ipynb
+docker compose exec -T -u jovyan jupyter jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=$TIMEOUT 03_Recomend/b_vecindario.ipynb
+docker compose exec -T -u jovyan jupyter jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=$TIMEOUT 03_Recomend/c_contenido.ipynb
+docker compose exec -T -u jovyan jupyter jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=$TIMEOUT 03_Recomend/d_als.ipynb
+docker compose exec -T -u jovyan jupyter jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=$TIMEOUT 03_Recomend/e_hibrido.ipynb
+docker compose exec -T -u jovyan jupyter jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=$TIMEOUT 03_Recomend/f_analisis.ipynb
+
 echo "== Pipeline terminado =="

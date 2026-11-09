@@ -1,4 +1,4 @@
-# Proyecto 01: Data Mining
+# Proyecto 02: Data Mining
 
 Mineria y análisis en las contrataciones abiertas de la compra pública en Perú durante los años 2023 a 2025
 
@@ -63,3 +63,12 @@ Levanta el cluster de Spark y Jupyter con Docker
 - 02_Clustering/c_densidad.ipynb
 - 02_Clustering/d_jerarquico.ipynb
 - 02_Clustering/e_analisis.ipynb
+
+### 3. Recomendación
+
+- 03_Recomend/a_preparacion.ipynb
+- 03_Recomend/b_vecindario.ipynb
+- 03_Recomend/c_contenido.ipynb
+- 03_Recomend/d_als.ipynb
+- 03_Recomend/e_hibrido.ipynb
+- 03_Recomend/f_analisis.ipynb
