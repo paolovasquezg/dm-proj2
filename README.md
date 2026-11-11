@@ -72,3 +72,10 @@ Levanta el cluster de Spark y Jupyter con Docker
 - 03_Recomend/d_als.ipynb
 - 03_Recomend/e_hibrido.ipynb
 - 03_Recomend/f_analisis.ipynb
+
+### 4. PageRank y HITS
+
+- 04_PageRank/a_grafo.ipynb
+- 04_PageRank/b_pagerank.ipynb
+- 04_PageRank/c_hits.ipynb
+- 04_PageRank/d_analisis.ipynb

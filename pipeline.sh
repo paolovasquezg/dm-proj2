@@ -55,4 +55,12 @@ docker compose exec -T -u jovyan jupyter jupyter nbconvert --to notebook --execu
 docker compose exec -T -u jovyan jupyter jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=$TIMEOUT 03_Recomend/e_hibrido.ipynb
 docker compose exec -T -u jovyan jupyter jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=$TIMEOUT 03_Recomend/f_analisis.ipynb
 
+echo "== 4. PageRank y HITS =="
+
+# 5. PageRank y HITS
+docker compose exec -T -u jovyan jupyter jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=$TIMEOUT 04_PageRank/a_grafo.ipynb
+docker compose exec -T -u jovyan jupyter jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=$TIMEOUT 04_PageRank/b_pagerank.ipynb
+docker compose exec -T -u jovyan jupyter jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=$TIMEOUT 04_PageRank/c_hits.ipynb
+docker compose exec -T -u jovyan jupyter jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=$TIMEOUT 04_PageRank/d_analisis.ipynb
+
 echo "== Pipeline terminado =="
