@@ -79,3 +79,11 @@ Levanta el cluster de Spark y Jupyter con Docker
 - 04_PageRank/b_pagerank.ipynb
 - 04_PageRank/c_hits.ipynb
 - 04_PageRank/d_analisis.ipynb
+
+### 5. Grafos y comunidades
+
+- 05_Comunidad/a_grafo.ipynb
+- 05_Comunidad/b_particion.ipynb
+- 05_Comunidad/c_solapadas.ipynb
+- 05_Comunidad/d_escalabilidad.ipynb
+- 05_Comunidad/e_analisis.ipynb
