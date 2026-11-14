@@ -72,4 +72,13 @@ docker compose exec -T -u jovyan jupyter jupyter nbconvert --to notebook --execu
 docker compose exec -T -u jovyan jupyter jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=$TIMEOUT 05_Comunidad/d_escalabilidad.ipynb
 docker compose exec -T -u jovyan jupyter jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=$TIMEOUT 05_Comunidad/e_analisis.ipynb
 
+echo "== 6. Embeddings =="
+
+# 7. Embeddings
+docker compose exec -T -u jovyan jupyter jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=$TIMEOUT 06_Embeddings/a_grafo.ipynb
+docker compose exec -T -u jovyan jupyter jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=$TIMEOUT 06_Embeddings/b_node2vec.ipynb
+docker compose exec -T -u jovyan jupyter jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=$TIMEOUT 06_Embeddings/c_proyeccion.ipynb
+docker compose exec -T -u jovyan jupyter jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=$TIMEOUT 06_Embeddings/d_enlaces.ipynb
+docker compose exec -T -u jovyan jupyter jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=$TIMEOUT 06_Embeddings/e_analisis.ipynb
+
 echo "== Pipeline terminado =="
