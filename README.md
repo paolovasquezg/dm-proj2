@@ -87,3 +87,13 @@ Levanta el cluster de Spark y Jupyter con Docker
 - 05_Comunidad/c_solapadas.ipynb
 - 05_Comunidad/d_escalabilidad.ipynb
 - 05_Comunidad/e_analisis.ipynb
+
+### 6. Embeddings
+
+Node2Vec y SVD sobre el grafo de co-participación; los artefactos para la web quedan en `06_Embeddings/temp/<notebook>/web/`
+
+- 06_Embeddings/a_grafo.ipynb
+- 06_Embeddings/b_node2vec.ipynb
+- 06_Embeddings/c_proyeccion.ipynb
+- 06_Embeddings/d_enlaces.ipynb
+- 06_Embeddings/e_analisis.ipynb
