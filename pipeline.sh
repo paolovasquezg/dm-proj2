@@ -23,14 +23,14 @@ docker compose exec -T jupyter sh -c 'chmod -R a+rwX /home/jovyan/work/data /hom
 
 echo "== 0. EDA =="
 
-# 1. EDA
+# 0. EDA
 docker compose exec -T -u jovyan jupyter jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=$TIMEOUT 00_EDA/a_entendimiento.ipynb
 docker compose exec -T -u jovyan jupyter jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=$TIMEOUT 00_EDA/b_exploracion.ipynb
 docker compose exec -T -u jovyan jupyter jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=$TIMEOUT 00_EDA/c_justificacion.ipynb
 
 echo "== 1. Transformaciones =="
 
-# 2. Transformaciones
+# 1. Transformaciones
 docker compose exec -T -u jovyan jupyter jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=$TIMEOUT 01_Trans/a_planteamiento.ipynb
 docker compose exec -T -u jovyan jupyter jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=$TIMEOUT 01_Trans/b_transformaciones.ipynb
 docker compose exec -T -u jovyan jupyter jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=$TIMEOUT 01_Trans/c_uso.ipynb
@@ -38,7 +38,7 @@ docker compose exec -T -u jovyan jupyter jupyter nbconvert --to notebook --execu
 
 echo "== 2. Clustering =="
 
-# 3. Clustering
+# 2. Clustering
 docker compose exec -T -u jovyan jupyter jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=$TIMEOUT 02_Clustering/a_preparacion.ipynb
 docker compose exec -T -u jovyan jupyter jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=$TIMEOUT 02_Clustering/b_kmeans.ipynb
 docker compose exec -T -u jovyan jupyter jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=$TIMEOUT 02_Clustering/c_densidad.ipynb
@@ -47,7 +47,7 @@ docker compose exec -T -u jovyan jupyter jupyter nbconvert --to notebook --execu
 
 echo "== 3. Recomendación =="
 
-# 4. Recomendación
+# 3. Recomendación
 docker compose exec -T -u jovyan jupyter jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=$TIMEOUT 03_Recomend/a_preparacion.ipynb
 docker compose exec -T -u jovyan jupyter jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=$TIMEOUT 03_Recomend/b_vecindario.ipynb
 docker compose exec -T -u jovyan jupyter jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=$TIMEOUT 03_Recomend/c_contenido.ipynb
@@ -57,7 +57,7 @@ docker compose exec -T -u jovyan jupyter jupyter nbconvert --to notebook --execu
 
 echo "== 4. PageRank y HITS =="
 
-# 5. PageRank y HITS
+# 4. PageRank y HITS
 docker compose exec -T -u jovyan jupyter jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=$TIMEOUT 04_PageRank/a_grafo.ipynb
 docker compose exec -T -u jovyan jupyter jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=$TIMEOUT 04_PageRank/b_pagerank.ipynb
 docker compose exec -T -u jovyan jupyter jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=$TIMEOUT 04_PageRank/c_hits.ipynb
@@ -65,7 +65,7 @@ docker compose exec -T -u jovyan jupyter jupyter nbconvert --to notebook --execu
 
 echo "== 5. Grafos y comunidades =="
 
-# 6. Grafos y comunidades
+# 5. Grafos y comunidades
 docker compose exec -T -u jovyan jupyter jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=$TIMEOUT 05_Comunidad/a_grafo.ipynb
 docker compose exec -T -u jovyan jupyter jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=$TIMEOUT 05_Comunidad/b_particion.ipynb
 docker compose exec -T -u jovyan jupyter jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=$TIMEOUT 05_Comunidad/c_solapadas.ipynb
@@ -74,7 +74,7 @@ docker compose exec -T -u jovyan jupyter jupyter nbconvert --to notebook --execu
 
 echo "== 6. Representación en grafos =="
 
-# 7. Representación en grafos
+# 6. Representación en grafos
 docker compose exec -T -u jovyan jupyter jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=$TIMEOUT 06_Representacion/a_grafo.ipynb
 docker compose exec -T -u jovyan jupyter jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=$TIMEOUT 06_Representacion/b_node2vec.ipynb
 docker compose exec -T -u jovyan jupyter jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=$TIMEOUT 06_Representacion/c_proyeccion.ipynb

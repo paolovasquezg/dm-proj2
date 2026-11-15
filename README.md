@@ -90,8 +90,6 @@ Levanta el cluster de Spark y Jupyter con Docker
 
 ### 6. Representación en grafos
 
-Node2Vec y SVD sobre el grafo de co-participación; los artefactos para la web quedan en `06_Representacion/temp/<notebook>/web/`
-
 - 06_Representacion/a_grafo.ipynb
 - 06_Representacion/b_node2vec.ipynb
 - 06_Representacion/c_proyeccion.ipynb
