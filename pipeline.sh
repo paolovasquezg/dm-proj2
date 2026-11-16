@@ -3,6 +3,7 @@ set -e
 cd "$(dirname "$0")"
 
 TIMEOUT=7200
+INICIO=$(date +%s)
 
 echo "== Activar ambiente =="
 PYTHON=""
@@ -93,3 +94,6 @@ echo "== 8. Datos para la web =="
 python data/exportar.py
 
 echo "== Pipeline terminado =="
+
+TOTAL=$(( $(date +%s) - INICIO ))
+printf "Tiempo total: %dh %02dm %02ds\n" $((TOTAL / 3600)) $((TOTAL % 3600 / 60)) $((TOTAL % 60))
