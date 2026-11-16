@@ -1,0 +1,27 @@
+[
+ {
+  "tipologia_proveedor":"esporádico (fuera del clustering)",
+  "entidades":612,
+  "pct":75.8
+ },
+ {
+  "tipologia_proveedor":"contratistas de obras",
+  "entidades":71,
+  "pct":8.8
+ },
+ {
+  "tipologia_proveedor":"grandes multicliente",
+  "entidades":64,
+  "pct":7.9
+ },
+ {
+  "tipologia_proveedor":"típicos de pocos clientes",
+  "entidades":56,
+  "pct":6.9
+ },
+ {
+  "tipologia_proveedor":"ganadores sin competencia",
+  "entidades":4,
+  "pct":0.5
+ }
+]

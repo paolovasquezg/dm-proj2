@@ -1,0 +1,90 @@
+[
+ {
+  "metodo":"todo junto",
+  "comunidades":1,
+  "comunidades_grandes":1,
+  "pct_nodos_en_mayor":100.0,
+  "pct_nodos_en_grandes":100.0,
+  "Q":-0.0,
+  "cobertura":1.0,
+  "conductancia_med":0.0,
+  "seg":null
+ },
+ {
+  "metodo":"cada nodo solo",
+  "comunidades":7114,
+  "comunidades_grandes":0,
+  "pct_nodos_en_mayor":0.0140567894,
+  "pct_nodos_en_grandes":0.0,
+  "Q":-0.0011203537,
+  "cobertura":0.0,
+  "conductancia_med":null,
+  "seg":null
+ },
+ {
+  "metodo":"región dominante",
+  "comunidades":25,
+  "comunidades_grandes":25,
+  "pct_nodos_en_mayor":48.5521506888,
+  "pct_nodos_en_grandes":100.0,
+  "Q":0.3622856138,
+  "cobertura":0.7551153647,
+  "conductancia_med":0.5230329855,
+  "seg":null
+ },
+ {
+  "metodo":"categoría dominante",
+  "comunidades":3,
+  "comunidades_grandes":3,
+  "pct_nodos_en_mayor":49.3533876863,
+  "pct_nodos_en_grandes":100.0,
+  "Q":0.4305137383,
+  "cobertura":0.9629877877,
+  "conductancia_med":0.0610985524,
+  "seg":null
+ },
+ {
+  "metodo":"familia dominante",
+  "comunidades":2732,
+  "comunidades_grandes":77,
+  "pct_nodos_en_mayor":8.5184143942,
+  "pct_nodos_en_grandes":58.8979477087,
+  "Q":0.3322761133,
+  "cobertura":0.3538816188,
+  "conductancia_med":0.7150857842,
+  "seg":null
+ },
+ {
+  "metodo":"tipología KMeans",
+  "comunidades":2807,
+  "comunidades_grandes":3,
+  "pct_nodos_en_mayor":31.2904132696,
+  "pct_nodos_en_grandes":60.5004217037,
+  "Q":0.0788518117,
+  "cobertura":0.4866464961,
+  "conductancia_med":0.7101435708,
+  "seg":null
+ },
+ {
+  "metodo":"familia dominante (sin dato agrupado)",
+  "comunidades":214,
+  "comunidades_grandes":79,
+  "pct_nodos_en_mayor":19.9044138319,
+  "pct_nodos_en_grandes":94.3210570706,
+  "Q":0.4031405207,
+  "cobertura":0.4758925712,
+  "conductancia_med":0.7150857842,
+  "seg":null
+ },
+ {
+  "metodo":"tipología KMeans (sin dato agrupado)",
+  "comunidades":5,
+  "comunidades_grandes":4,
+  "pct_nodos_en_mayor":39.4011807703,
+  "pct_nodos_en_grandes":99.901602474,
+  "Q":0.1040131142,
+  "cobertura":0.5438121714,
+  "conductancia_med":0.695529662,
+  "seg":null
+ }
+]

@@ -1,0 +1,24 @@
+[
+ {
+  "cautiva":"cautiva",
+  "entidades":964,
+  "hhi_mediano":0.397,
+  "proveedores_mediana":7.0,
+  "alt_mercado_mediana":217.0,
+  "pct_sin_alt_mercado":0.3,
+  "evaluadas":494,
+  "alt_recomendadas_mediana":9.0,
+  "pct_sin_alt_recomendada":4.9
+ },
+ {
+  "cautiva":"no cautiva",
+  "entidades":1882,
+  "hhi_mediano":0.101,
+  "proveedores_mediana":35.0,
+  "alt_mercado_mediana":248.0,
+  "pct_sin_alt_mercado":0.7,
+  "evaluadas":1614,
+  "alt_recomendadas_mediana":7.0,
+  "pct_sin_alt_recomendada":10.4
+ }
+]

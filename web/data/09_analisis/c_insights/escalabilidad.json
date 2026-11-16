@@ -1,0 +1,101 @@
+[
+ {
+  "parte":"II",
+  "tecnica":"KMeans++",
+  "corre_en":"Spark MLlib",
+  "escala":"completa",
+  "datos":"13,317 proveedores, 2,696 entidades",
+  "se_gana":"Todos los actores filtrados",
+  "se_pierde":"—"
+ },
+ {
+  "parte":"II",
+  "tecnica":"Ward",
+  "corre_en":"scipy",
+  "escala":"muestra",
+  "datos":"5,000 proveedores",
+  "se_gana":"Dendrograma y validación",
+  "se_pierde":"62% de los proveedores (matriz n²)"
+ },
+ {
+  "parte":"III",
+  "tecnica":"ALS",
+  "corre_en":"Spark MLlib",
+  "escala":"completa",
+  "datos":"2,992 × 86,017",
+  "se_gana":"Toda la matriz",
+  "se_pierde":"—"
+ },
+ {
+  "parte":"III",
+  "tecnica":"Contenido (HNSW)",
+  "corre_en":"local",
+  "escala":"completa, aproximada",
+  "datos":"vecinos por texto",
+  "se_gana":"Velocidad",
+  "se_pierde":"Nada: NDCG 0.0363 vs 0.0364 exacto"
+ },
+ {
+  "parte":"IV",
+  "tecnica":"PageRank",
+  "corre_en":"Spark + scipy",
+  "escala":"completa",
+  "datos":"89k nodos, 136k aristas",
+  "se_gana":"Todo el bipartito",
+  "se_pierde":"—"
+ },
+ {
+  "parte":"V",
+  "tecnica":"Girvan–Newman",
+  "corre_en":"local",
+  "escala":"muestra",
+  "datos":"300 nodos",
+  "se_gana":"Validar Louvain",
+  "se_pierde":"Todo el mercado: no escala"
+ },
+ {
+  "parte":"V",
+  "tecnica":"Espectral, Louvain, BigCLAM",
+  "corre_en":"local",
+  "escala":"núcleo",
+  "datos":"7,114 nodos (12%), 22% del peso",
+  "se_gana":"Calidad (Q 0.87) y métodos exactos",
+  "se_pierde":"Los proveedores esporádicos y los hubs"
+ },
+ {
+  "parte":"V",
+  "tecnica":"LPA",
+  "corre_en":"Spark",
+  "escala":"completa",
+  "datos":"60k nodos, 1.6M aristas",
+  "se_gana":"Todo el grafo, distribuible",
+  "se_pierde":"Calidad: Q 0.63-0.68, no converge"
+ },
+ {
+  "parte":"VI",
+  "tecnica":"Node2Vec",
+  "corre_en":"local",
+  "escala":"casi completa",
+  "datos":"56,948 nodos (95%)",
+  "se_gana":"Toda la periferia",
+  "se_pierde":"61 postores masivos"
+ },
+ {
+  "parte":"VI",
+  "tecnica":"UMAP",
+  "corre_en":"local",
+  "escala":"muestra",
+  "datos":"15,000 nodos",
+  "se_gana":"Mapa legible",
+  "se_pierde":"Solo para visualizar (el clustering usa todos)"
+ },
+ {
+  "parte":"VI",
+  "tecnica":"Enlaces",
+  "corre_en":"local",
+  "escala":"muestra",
+  "datos":"50k + 50k pares",
+  "se_gana":"Tiempo",
+  "se_pierde":"Nada: más pares no cambian las métricas"
+ }
+]

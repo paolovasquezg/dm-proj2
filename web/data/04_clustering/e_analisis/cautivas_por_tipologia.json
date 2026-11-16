@@ -1,0 +1,30 @@
+[
+ {
+  "kmeans":0,
+  "tipologia":"compradoras pequeñas",
+  "entidades":909,
+  "cautivas":430,
+  "pct_cautivas":47.3
+ },
+ {
+  "kmeans":1,
+  "tipologia":"compra sin competencia",
+  "entidades":234,
+  "cautivas":58,
+  "pct_cautivas":24.8
+ },
+ {
+  "kmeans":2,
+  "tipologia":"compradoras de obras",
+  "entidades":680,
+  "cautivas":292,
+  "pct_cautivas":42.9
+ },
+ {
+  "kmeans":3,
+  "tipologia":"grandes diversificadas",
+  "entidades":873,
+  "cautivas":27,
+  "pct_cautivas":3.1
+ }
+]

@@ -1,0 +1,20 @@
+[
+ {
+  "grupo":"hubs (fuera del núcleo)",
+  "proveedores":61,
+  "grado_med":3571.0,
+  "pct_pr_med":0.9547182534,
+  "pct_hits_med":0.9061348338,
+  "pct_top_pr":14.7540983607,
+  "pct_consorcio":0.0
+ },
+ {
+  "grupo":"núcleo",
+  "proveedores":7114,
+  "grado_med":157.0,
+  "pct_pr_med":0.9332631922,
+  "pct_hits_med":0.8682644128,
+  "pct_top_pr":9.4461624965,
+  "pct_consorcio":0.5763283666
+ }
+]

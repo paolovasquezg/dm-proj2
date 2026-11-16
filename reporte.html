@@ -1,0 +1,526 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Informe técnico conciso sobre mercados, cautividad y competencia en las compras públicas del Perú, 2023–2025.">
+  <title>Mercados y Competencia en Compras Públicas</title>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+  <style>
+    :root {
+      --paper: #f8fafc;
+      --surface: #ffffff;
+      --ink: #0f172a;
+      --text: #334155;
+      --muted: #64748b;
+      --rule: #e2e8f0;
+      --blue: #2563eb;
+      --amber: #d97706;
+      --red: #dc2626;
+      --slate: #94a3b8;
+      --teal: #0f766e;
+      --shadow: 0 1px 3px rgba(15, 23, 42, .05), 0 14px 30px -24px rgba(15, 23, 42, .28);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 78px; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--text);
+      font: 16px/1.62 Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+      font-variant-numeric: tabular-nums lining-nums;
+    }
+    .topbar {
+      position: sticky;
+      z-index: 20;
+      top: 0;
+      border-bottom: 1px solid rgba(226, 232, 240, .9);
+      background: rgba(248, 250, 252, .94);
+      backdrop-filter: blur(12px);
+    }
+    .topbar-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 900px;
+      min-height: 58px;
+      margin: 0 auto;
+      padding: 0 24px;
+      gap: 20px;
+    }
+    .brand { color: var(--ink); font-size: 13px; font-weight: 750; letter-spacing: -.01em; }
+    .period { color: var(--muted); font-size: 11px; font-weight: 650; letter-spacing: .06em; text-transform: uppercase; }
+    .progress-track { height: 2px; background: #e5eaf0; }
+    .progress-bar { width: 0; height: 100%; background: var(--blue); transition: width .08s linear; }
+    article { width: 100%; max-width: 900px; margin: 0 auto; padding: 40px 24px 88px; }
+    header { padding: 24px 0 34px; border-bottom: 1px solid var(--rule); }
+    h1, h2, h3 {
+      color: var(--ink);
+      font-family: "Plus Jakarta Sans", Inter, ui-sans-serif, system-ui, sans-serif;
+      letter-spacing: -.035em;
+      line-height: 1.16;
+    }
+    h1 { max-width: 820px; margin: 0 0 18px; font-size: clamp(2.15rem, 6vw, 3.75rem); }
+    h2 { margin: 62px 0 18px; padding-top: 4px; font-size: clamp(1.55rem, 3vw, 2rem); }
+    h3 { margin: 30px 0 10px; font-size: 1.05rem; letter-spacing: -.015em; }
+    p { max-width: 76ch; margin: 0 0 15px; }
+    a { color: #1e40af; }
+    code {
+      border-radius: 4px;
+      background: #eef2f7;
+      padding: .1em .32em;
+      color: var(--ink);
+      font: .88em "JetBrains Mono", Consolas, monospace;
+    }
+    .subtitle { max-width: 750px; color: var(--muted); font-size: 1.08rem; }
+    .authors { margin-top: 24px; color: var(--ink); font-weight: 700; }
+    .affiliation { color: var(--muted); font-size: .9rem; }
+    .eyebrow { margin-bottom: 13px; color: var(--blue); font-size: 11px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
+    .abstract {
+      margin-top: 28px;
+      border-left: 3px solid var(--blue);
+      padding: 2px 0 2px 18px;
+      color: #475569;
+    }
+    .kpis {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      margin: 30px 0 8px;
+    }
+    .kpi {
+      border: 1px solid var(--rule);
+      border-radius: 12px;
+      background: var(--surface);
+      padding: 18px;
+      box-shadow: var(--shadow);
+    }
+    .kpi b { display: block; color: var(--ink); font-size: clamp(1.5rem, 4vw, 2rem); line-height: 1.1; letter-spacing: -.04em; }
+    .kpi > span { display: block; margin-top: 7px; color: var(--muted); font-size: 10px; font-weight: 750; letter-spacing: .07em; text-transform: uppercase; }
+    .executive {
+      margin: 16px 0 22px;
+      padding-left: 20px;
+    }
+    .executive li { margin: 8px 0; padding-left: 3px; }
+    .executive strong { color: var(--ink); }
+    .pipeline {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 8px;
+      margin: 22px 0;
+    }
+    .pipeline div {
+      border: 1px solid var(--rule);
+      border-radius: 9px;
+      background: var(--surface);
+      padding: 13px 10px;
+      color: var(--muted);
+      font-size: 11px;
+      line-height: 1.4;
+    }
+    .pipeline b { display: block; margin-bottom: 5px; color: var(--ink); font-size: 12px; }
+    .chart-card {
+      margin: 24px 0 30px;
+      overflow: hidden;
+      border: 1px solid var(--rule);
+      border-radius: 14px;
+      background: var(--surface);
+      padding: 18px 18px 14px;
+      box-shadow: var(--shadow);
+    }
+    .chart-card h3 { margin: 0 0 3px; }
+    .chart-note { margin: 0 0 14px; color: var(--muted); font-size: 12px; }
+    .chart-frame { position: relative; width: 100%; height: 290px; min-width: 0; }
+    .chart-frame canvas { width: 100% !important; height: 100% !important; }
+    .chart-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin: 24px 0 30px; }
+    .chart-grid .chart-card { margin: 0; }
+    .table-wrap { margin: 22px 0; overflow-x: auto; }
+    table { width: 100%; border-collapse: collapse; border-top: 2px solid var(--ink); border-bottom: 2px solid var(--ink); font-size: 13px; }
+    th, td { padding: 9px 10px; border-bottom: 1px solid var(--rule); text-align: left; vertical-align: top; }
+    th { color: var(--ink); font-size: 10px; letter-spacing: .06em; text-transform: uppercase; }
+    .num { text-align: right; white-space: nowrap; }
+    .callout {
+      margin: 26px 0;
+      border: 1px solid #fed7aa;
+      border-left: 4px solid var(--amber);
+      border-radius: 10px;
+      background: #fffbeb;
+      padding: 16px 18px;
+    }
+    .callout strong { color: #92400e; }
+    .methods { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin: 18px 0; }
+    .method { border: 1px solid var(--rule); border-radius: 9px; background: white; padding: 13px 14px; font-size: 13px; }
+    .method b { color: var(--ink); }
+    .refs { padding-left: 20px; color: var(--muted); font-size: 13px; }
+    .refs li { margin: 7px 0; }
+    footer { margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 12px; }
+    @media (max-width: 720px) {
+      article { padding: 28px 18px 64px; }
+      .topbar-inner { padding: 0 18px; }
+      .period { display: none; }
+      .kpis, .chart-grid, .methods { grid-template-columns: 1fr; }
+      .pipeline { grid-template-columns: 1fr; }
+      .chart-frame { height: 280px; }
+    }
+    @media print {
+      .topbar { position: static; }
+      .progress-track { display: none; }
+      article { max-width: none; padding: 20px; }
+      .chart-card, .kpi, table { break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="topbar" aria-label="Progreso del informe">
+    <div class="topbar-inner">
+      <span class="brand">Compras públicas · Mercados y competencia</span>
+      <span class="period">OECE / OCDS · 2023–2025</span>
+    </div>
+    <div class="progress-track"><div class="progress-bar" id="reading-progress"></div></div>
+  </nav>
+
+  <article>
+    <header>
+      <p class="eyebrow">Informe técnico ejecutivo</p>
+      <h1>Mercados y Competencia en las Compras Públicas del Perú</h1>
+      <p class="subtitle">Clustering, recomendación, PageRank/HITS, comunidades y representación en grafos sobre quién le compra a quién y quién compite con quién.</p>
+      <p class="affiliation">Curso de Minería de Datos · Proyecto 02 · <a href="web/index.html">Versión interactiva</a></p>
+      <div class="abstract">
+        Sobre <span data-v="procesos">236,229</span> procesos OCDS se construyen dos grafos: el bipartito entidad–proveedor (quién le compra a quién) y el de co-participación (quién compite con quién). La cautividad resulta <strong>local</strong> (entidades chicas atadas a consorcios de una obra), los mercados se forman <strong>por rubro y luego por región</strong>, y los sustitutos recomendados <strong>ya compiten entre sí</strong>. Todo resultado es una señal descriptiva, no una prueba.
+      </div>
+    </header>
+
+    <main>
+      <section id="ficha">
+        <h2>1. Ficha técnica y resultados</h2>
+        <div class="kpis">
+          <div class="kpi"><b><span data-v="procesos">236,229</span></b><span>Procesos (36 meses)</span></div>
+          <div class="kpi"><b><span data-v="entidades">2,992</span> × <span data-v="proveedores">86,017</span></b><span>Entidades × proveedores</span></div>
+          <div class="kpi"><b><span data-v="aristas_cop">1.64</span> M</b><span>Pares que compitieron</span></div>
+        </div>
+        <ul class="executive">
+          <li><strong>PQ1 · Cautividad:</strong> <span data-v="pct_cautivas">29.9</span>% de las entidades son cautivas (HHI ≥ 0.25), pero tienen una mediana de <span data-v="alt_mercado">217</span> alternativas en su familia y región.</li>
+          <li><strong>PQ2 · Mercados:</strong> <span data-v="comunidades">41</span> comunidades (Q = <span data-v="Q">0.870</span>) explicadas por familia (AMI <span data-v="ami_fam">0.57</span>) más que por región (<span data-v="ami_reg">0.20</span>).</li>
+          <li><strong>PQ3 · Sustitutos:</strong> el <span data-v="sust_als">33.7</span>% de los sustitutos de ALS ya co-participa, frente al <span data-v="sust_azar">12.0</span>% al azar.</li>
+        </ul>
+      </section>
+
+      <section id="datos">
+        <h2>2. Datos y transformaciones</h2>
+        <p>El JSON OCDS se aplana a seis tablas staging (bronze → staging → final) y de ahí a matrices dispersas y grafos.</p>
+        <div class="pipeline" aria-label="Etapas">
+          <div><b>0 · EDA</b>Negocio, calidad y PQ1–PQ3.</div>
+          <div><b>1 · Trans</b>Resolución de entidades, features, grafos.</div>
+          <div><b>2–4 · Modelos</b>Clustering, recomendación, PageRank.</div>
+          <div><b>5–6 · Grafos</b>Comunidades y Node2Vec.</div>
+          <div><b>7 · Análisis</b>Convergencia, escala, ética.</div>
+        </div>
+        <ul class="executive">
+          <li><strong>Cola larga:</strong> el <span data-v="pct_grado1">84.9</span>% de los proveedores le vende a una sola entidad; la matriz entidad × proveedor tiene densidad <span data-v="densidad">0.053</span>%.</li>
+          <li><strong>Co-participación:</strong> arista entre dos proveedores que ofertaron juntos en ≥ 2 procesos (una coincidencia aislada no indica competencia).</li>
+        </ul>
+        <div class="chart-card">
+          <h3>Postor único según método de contratación</h3>
+          <p class="chart-note">% de procesos con un solo oferente; métodos con ≥ 1,000 procesos.</p>
+          <div class="chart-frame"><canvas id="c-metodo" role="img" aria-label="Porcentaje de postor único por método"></canvas></div>
+        </div>
+      </section>
+
+      <section id="clustering">
+        <h2>3. Clustering y cautividad (PQ1)</h2>
+        <p>KMeans++ (Spark) sobre features estandarizadas de actores con ≥ 3–5 procesos; DBSCAN/HDBSCAN y Ward como contraste. La cautividad se mide con el índice de Herfindahl de la entidad: $HHI = \sum_j s_j^2$, con $s_j$ la cuota del proveedor $j$ en su gasto.</p>
+        <div class="chart-grid">
+          <div class="chart-card">
+            <h3>Silueta según k</h3>
+            <p class="chart-note">k = 4: máximo local e interpretable en ambos sujetos.</p>
+            <div class="chart-frame"><canvas id="c-k" role="img" aria-label="Silueta por k"></canvas></div>
+          </div>
+          <div class="chart-card">
+            <h3>% de cautivas por tipología</h3>
+            <p class="chart-note">Entidades con HHI ≥ 0.25 (umbral usual de alta concentración).</p>
+            <div class="chart-frame"><canvas id="c-caut" role="img" aria-label="Cautivas por tipología"></canvas></div>
+          </div>
+        </div>
+        <ul class="executive">
+          <li><strong>Cautivas = chicas o de obras:</strong> 47% de las compradoras pequeñas y 43% de las de obras; 3% de las grandes diversificadas.</li>
+          <li><strong>Densidad pareja:</strong> DBSCAN da un grupo gigante y HDBSCAN deja 19–27% de ruido; su valor es el consenso de outliers.</li>
+          <li><strong>Parámetros:</strong> eps = cuantil 0.95 de la k-distancia y min_samples = 5: la configuración con más grupos que mantiene el ruido ≤ 5–10%.</li>
+        </ul>
+      </section>
+
+      <section id="recomendacion">
+        <h2>4. Recomendación (PQ3)</h2>
+        <p>Matriz entidad × proveedor (feedback implícito). Se comparan vecindario, contenido (HNSW), ALS y un híbrido $s = w\,s_{ALS} + (1-w)\,s_{reg}$, entrenando con 2023–2024 y evaluando en 2025.</p>
+        <div class="chart-grid">
+          <div class="chart-card">
+            <h3>NDCG@10 en test (2025)</h3>
+            <p class="chart-note">El híbrido supera a la popularidad regional.</p>
+            <div class="chart-frame"><canvas id="c-ndcg" role="img" aria-label="NDCG por modelo"></canvas></div>
+          </div>
+          <div class="chart-card">
+            <h3>Peso w del híbrido</h3>
+            <p class="chart-note">Precisión vs cobertura del catálogo.</p>
+            <div class="chart-frame"><canvas id="c-w" role="img" aria-label="NDCG y cobertura según w"></canvas></div>
+          </div>
+        </div>
+        <ul class="executive">
+          <li><strong>Ganancia chica pero real:</strong> NDCG <span data-v="ndcg_h">0.099</span> vs <span data-v="ndcg_r">0.081</span>; la cola larga limita lo predecible.</li>
+          <li><strong>Las cautivas sí reciben alternativas:</strong> mediana de <span data-v="alt_rec">9</span> proveedores recomendados que no son su proveedor actual.</li>
+        </ul>
+      </section>
+
+      <section id="pagerank">
+        <h2>5. PageRank y HITS (PQ1)</h2>
+        <p>Sobre el bipartito ponderado: $PR(v) = \frac{1-d}{N} + d\sum_{u \to v} \frac{w_{uv}}{w_u} PR(u)$, con $d = 0.85$ (valor clásico; entre 0.75 y 0.90 el ranking casi no cambia).</p>
+        <div class="chart-card">
+          <h3>Proveedores: monto concentrado vs centralidad</h3>
+          <p class="chart-note">% de consorcios en cada grupo (residuo de monto ~ PageRank, 1% extremo).</p>
+          <div class="chart-frame"><canvas id="c-cons" role="img" aria-label="Porcentaje de consorcios por grupo"></canvas></div>
+        </div>
+        <ul class="executive">
+          <li><strong>Cautivas periféricas:</strong> percentil mediano de PageRank <span data-v="pr_caut">0.29</span> vs <span data-v="pr_nocaut">0.67</span>.</li>
+          <li><strong>El dinero concentrado está en consorcios:</strong> <span data-v="pct_cons">82.7</span>% de los proveedores con más monto que centralidad.</li>
+        </ul>
+      </section>
+
+      <section id="comunidades">
+        <h2>6. Comunidades (PQ2)</h2>
+        <p>Louvain maximiza la modularidad $Q = \sum_c \left[\frac{e_c}{m} - \gamma\left(\frac{vol_c}{2m}\right)^2\right]$ en el núcleo de competidores recurrentes; espectral, BigCLAM (solapadas), Girvan–Newman (muestra) y LPA en Spark como contraste.</p>
+        <div class="chart-grid">
+          <div class="chart-card">
+            <h3>Resolución γ</h3>
+            <p class="chart-note">γ = 1.25: Q alta y partición estable entre semillas.</p>
+            <div class="chart-frame"><canvas id="c-gamma" role="img" aria-label="Q y estabilidad según gamma"></canvas></div>
+          </div>
+          <div class="chart-card">
+            <h3>¿Qué explica una comunidad?</h3>
+            <p class="chart-note">AMI de Louvain con cada atributo (0 = azar).</p>
+            <div class="chart-frame"><canvas id="c-ami" role="img" aria-label="AMI por atributo"></canvas></div>
+          </div>
+        </div>
+        <ul class="executive">
+          <li><strong>Rubro primero, región después:</strong> bienes, servicios y obras casi no se mezclan.</li>
+          <li><strong>Grupos cerrados:</strong> 11 grupos de 3–7 proveedores densos y aislados, como señales para revisión.</li>
+          <li><strong>BigCLAM:</strong> δ teórico $\sqrt{-\log(1-\varepsilon)}$ con ε = densidad del núcleo: 72% de cobertura y 10% de proveedores en varias comunidades.</li>
+        </ul>
+      </section>
+
+      <section id="representacion">
+        <h2>7. Representación en grafos (PQ2, PQ3)</h2>
+        <p>Node2Vec (caminatas sesgadas por $p$ y $q$) frente a SVD; KMeans + UMAP sobre los embeddings y predicción de enlaces 2025 con el producto de Hadamard $z_u \odot z_v$.</p>
+        <div class="chart-grid">
+          <div class="chart-card">
+            <h3>Predicción de enlaces (test 2025)</h3>
+            <p class="chart-note">PR-AUC; mejor configuración por modelo vs heurísticas.</p>
+            <div class="chart-frame"><canvas id="c-enl" role="img" aria-label="PR-AUC por modelo"></canvas></div>
+          </div>
+          <div class="chart-card">
+            <h3>Precisión del top-N</h3>
+            <p class="chart-note">% de pares predichos que compiten en 2025.</p>
+            <div class="chart-frame"><canvas id="c-top" role="img" aria-label="Precisión del top N"></canvas></div>
+          </div>
+        </div>
+        <ul class="executive">
+          <li><strong>6 mercados latentes</strong> (k = 6, ARI entre semillas <span data-v="ari_k6">0.996</span>) en los que se anidan las 41 comunidades.</li>
+          <li><strong>Enlaces:</strong> random forest PR-AUC <span data-v="prauc">0.72</span> vs Adamic-Adar 0.64; el top 100 se concreta en un 9%.</li>
+        </ul>
+      </section>
+
+      <section id="analisis">
+        <h2>8. Análisis: preguntas del enunciado</h2>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Técnica</th><th>Métrica</th><th class="num">Valor</th><th>Línea base</th><th class="num">Base</th></tr></thead>
+            <tbody id="t-desempeno"></tbody>
+          </table>
+        </div>
+        <div class="methods">
+          <div class="method"><b>¿Qué aportó más?</b> KMeans y PageRank (PQ1), Louvain (PQ2), Node2Vec, ALS e híbrido (PQ3). DBSCAN y Girvan–Newman aportaron poco solos.</div>
+          <div class="method"><b>¿Convergen?</b> Las técnicas de grafo sí (Louvain–LPA NMI 0.81); los clústeres no (NMI ≤ 0.11): agrupan por comportamiento.</div>
+          <div class="method"><b>¿Qué escaló?</b> KMeans, ALS, PageRank, LPA (Spark) y Node2Vec. Ward y Girvan–Newman exigieron muestra ($t \propto m^{2.9}$).</div>
+          <div class="method"><b>Verdad oculta:</b> el consorcio de un solo proceso aparece en II, III y IV como explicación común.</div>
+        </div>
+      </section>
+
+      <section id="discusion">
+        <h2>9. Discusión crítica y ética</h2>
+        <div class="methods">
+          <div class="method"><b>Núcleo vs completo.</b> El núcleo da Q 0.87 con métodos exactos, pero pierde la periferia, justo donde vive la cautividad.</div>
+          <div class="method"><b>Cobertura vs precisión.</b> LPA y Node2Vec cubren todo el grafo; LPA fragmenta y los embeddings no tienen nombre.</div>
+          <div class="method"><b>Límites del dato.</b> Consorcios sin miembros, región del proveedor inferida, oferentes solo registrados.</div>
+          <div class="method"><b>Personas naturales.</b> Sus claves contienen DNI: solo se publican nombres ya públicos y agregados.</div>
+        </div>
+        <div class="callout"><strong>Principio ético:</strong> un grupo cerrado, una entidad cautiva o un enlace predicho prioriza revisión; no prueba colusión. La red no distingue un mercado chico de un acuerdo.</div>
+      </section>
+
+      <section id="reproducibilidad">
+        <h2>10. Reproducibilidad</h2>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Módulo</th><th>Motor</th><th>Escala</th></tr></thead>
+            <tbody>
+              <tr><td>KMeans, ALS, PageRank, LPA</td><td>Spark 3.5 (Docker)</td><td>Dataset completo</td></tr>
+              <tr><td>Louvain, espectral, BigCLAM</td><td>networkx / scipy</td><td>Núcleo (7,114 nodos)</td></tr>
+              <tr><td>Ward, Girvan–Newman</td><td>scipy / networkx</td><td>Muestra</td></tr>
+              <tr><td>Node2Vec, UMAP, enlaces</td><td>Python local</td><td>95% de los nodos</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <ul class="executive">
+          <li><strong>Ejecución:</strong> <code>docker compose up -d</code>, <code>sh pipeline.sh</code> y <code>python3 data/exportar.py</code>.</li>
+          <li><strong>Web:</strong> <code>python3 -m http.server -d web</code>; la página lee los JSON de <code>web/data/</code>.</li>
+        </ul>
+      </section>
+
+      <section id="referencias">
+        <h2>Referencias esenciales</h2>
+        <ol class="refs">
+          <li>Leskovec, Rajaraman y Ullman. <em>Mining of Massive Datasets</em>. Cambridge University Press, 2020.</li>
+          <li>Blondel et al. “Fast Unfolding of Communities in Large Networks”, 2008.</li>
+          <li>Yang y Leskovec. “Overlapping Community Detection at Scale: A Nonnegative Matrix Factorization Approach” (BigCLAM), 2013.</li>
+          <li>Grover y Leskovec. “node2vec: Scalable Feature Learning for Networks”, 2016.</li>
+          <li>Hu, Koren y Volinsky. “Collaborative Filtering for Implicit Feedback Datasets”, 2008.</li>
+          <li>Open Contracting Partnership. <a href="https://standard.open-contracting.org/">Open Contracting Data Standard</a>; OECE, Contrataciones Abiertas 2023–2025.</li>
+        </ol>
+      </section>
+    </main>
+
+    <footer>Informe técnico ejecutivo · Minería de Datos · Proyecto 02 · 2023–2025</footer>
+  </article>
+
+  <script>
+    const css = getComputedStyle(document.documentElement);
+    const color = n => css.getPropertyValue(n).trim();
+    const BLUE = color("--blue"), AMBER = color("--amber"), SLATE = color("--slate"), TEAL = color("--teal");
+    const GRID = "rgba(15,23,42,.07)";
+    const tooltip = { backgroundColor: "rgba(15,23,42,.96)", padding: 11, cornerRadius: 7 };
+    Chart.defaults.color = "#64748b";
+    Chart.defaults.font.family = "Inter, system-ui, sans-serif";
+    Chart.defaults.font.size = 11;
+
+    const base = (extra = {}) => ({
+      responsive: true, maintainAspectRatio: false, interaction: { intersect: false, mode: "nearest" },
+      plugins: { legend: { position: "top", align: "end", labels: { usePointStyle: true, boxWidth: 8 } }, tooltip },
+      scales: { x: { grid: { display: false }, border: { color: "#cbd5e1" } }, y: { grid: { color: GRID }, border: { display: false }, beginAtZero: true } },
+      ...extra
+    });
+    const sinLeyenda = (o) => (o.plugins.legend = { display: false }, o);
+    const barH = (o) => (o.indexAxis = "y", o.scales = { x: { grid: { color: GRID }, beginAtZero: true }, y: { grid: { display: false }, ticks: { autoSkip: false } } }, o);
+
+    const DATA = "web/data";
+    const leer = (d, r) => fetch(`${d}/${r}.json`).then(x => { if (!x.ok) throw new Error(`${d}/${r}.json`); return x.json(); });
+    const datos = r => leer(DATA, r);
+    const fmt = (v, d = 0) => new Intl.NumberFormat("en-US", { minimumFractionDigits: d, maximumFractionDigits: d }).format(v);
+    const poner = vals => Object.entries(vals).forEach(([k, v]) => document.querySelectorAll(`[data-v="${k}"]`).forEach(el => (el.textContent = v)));
+
+    async function construir() {
+      const [stg, bip, cop, met, curvas, cautT, cautU, comp, peso, alt, sust, cautPR, contraste, gamma, compar, explica, estab, enl, top, desemp] = await Promise.all([
+        "02_datos/a_entendimiento/conteos_staging", "02_datos/b_exploracion/resumen_bipartito", "07_comunidades/a_grafo/resumen_grafo",
+        "02_datos/b_exploracion/metodo_competencia", "04_clustering/b_kmeans/curvas_k", "04_clustering/e_analisis/cautivas_por_tipologia",
+        "04_clustering/e_analisis/cautivas_umbral", "05_recomendacion/e_hibrido/comparacion_test", "05_recomendacion/e_hibrido/peso_hibrido",
+        "05_recomendacion/f_analisis/pq1_alternativas", "05_recomendacion/f_analisis/sustitutos_resumen", "06_pagerank/d_analisis/cautividad",
+        "06_pagerank/d_analisis/contraste_monto", "07_comunidades/b_particion/louvain_gamma", "07_comunidades/b_particion/comparacion",
+        "07_comunidades/e_analisis/explica", "08_representacion/c_proyeccion/estabilidad_k", "08_representacion/d_enlaces/resultados",
+        "08_representacion/d_enlaces/precision_top", "09_analisis/a_recuento/desempeno"
+      ].map(datos));
+
+      const b = bip[0], cp = Object.fromEntries(cop.map(r => [r.medida, r.valor]));
+      const caut = alt.find(r => r.cautiva === "cautiva"), louv = compar.find(r => r.metodo.startsWith("louvain"));
+      const ami = a => explica.find(r => r.particion === "louvain" && r.atributo === a && r.sin_dato === "excluido").ami;
+      const s = Object.fromEntries(sust.map(r => [r.metodo, r.pct_coparticipan]));
+      const m = Object.fromEntries(comp.map(r => [r.modelo, r]));
+      const cg = Object.fromEntries(contraste.map(r => [r.grupo, r]));
+      poner({
+        procesos: fmt(stg.find(r => r.tabla === "procesos").filas), entidades: fmt(b.entidades), proveedores: fmt(b.proveedores),
+        aristas_cop: fmt(cp.aristas / 1e6, 2), pct_grado1: fmt(b.pct_prov_grado1 * 100, 1), densidad: fmt(b.densidad * 100, 3),
+        pct_cautivas: fmt(cautU.find(r => r.umbral_hhi === 0.25).pct_entidades, 1), alt_mercado: fmt(caut.alt_mercado_mediana), alt_rec: fmt(caut.alt_recomendadas_mediana),
+        comunidades: louv.comunidades, Q: fmt(louv.Q, 3), ami_fam: fmt(ami("familia_dom"), 2), ami_reg: fmt(ami("region_dom"), 2),
+        sust_als: fmt(s.als, 1), sust_azar: fmt(s["azar (misma familia)"], 1),
+        ndcg_h: fmt(m["híbrido"]["ndcg@10"], 3), ndcg_r: fmt(m["popularidad regional"]["ndcg@10"], 3),
+        pr_caut: fmt(cautPR.find(r => r.cautiva === 1).pct_pr_med, 2), pr_nocaut: fmt(cautPR.find(r => r.cautiva === 0).pct_pr_med, 2),
+        pct_cons: fmt(cg["más monto que centralidad"].pct_consorcio, 1),
+        ari_k6: fmt(estab.find(r => r.k === 6).ari_semillas, 3), prauc: fmt(Math.max(...enl.map(r => r.pr_auc)), 2)
+      });
+
+      const mt = met.filter(r => r.procesos >= 1000).sort((a, b) => a.pct_postor_unico - b.pct_postor_unico);
+      new Chart(document.getElementById("c-metodo"), { type: "bar",
+        data: { labels: mt.map(r => r.metodo_detalle), datasets: [{ data: mt.map(r => r.pct_postor_unico), backgroundColor: mt.map(r => r.pct_postor_unico > 50 ? AMBER : SLATE), borderRadius: 4 }] },
+        options: barH(sinLeyenda(base())) });
+
+      const ks = [...new Set(curvas.map(r => r.k))];
+      new Chart(document.getElementById("c-k"), { type: "line",
+        data: { labels: ks, datasets: ["entidad", "proveedor"].map((suj, i) => ({ label: suj + "s", data: ks.map(k => curvas.find(r => r.sujeto === suj && r.k === k)?.silueta ?? null), borderColor: i ? TEAL : BLUE, backgroundColor: i ? TEAL : BLUE, tension: .2 })) },
+        options: base({ scales: { x: { grid: { display: false }, title: { display: true, text: "k" } }, y: { grid: { color: GRID }, title: { display: true, text: "silueta" } } } }) });
+
+      const ct = [...cautT].sort((a, b) => a.pct_cautivas - b.pct_cautivas);
+      new Chart(document.getElementById("c-caut"), { type: "bar",
+        data: { labels: ct.map(r => r.tipologia), datasets: [{ data: ct.map(r => r.pct_cautivas), backgroundColor: ct.map(r => r.pct_cautivas > 40 ? AMBER : BLUE), borderRadius: 4 }] },
+        options: barH(sinLeyenda(base())) });
+
+      const cm = [...comp].sort((a, b) => a["ndcg@10"] - b["ndcg@10"]);
+      new Chart(document.getElementById("c-ndcg"), { type: "bar",
+        data: { labels: cm.map(r => r.modelo), datasets: [{ data: cm.map(r => r["ndcg@10"]), backgroundColor: cm.map(r => r.modelo === "híbrido" ? AMBER : r.modelo === "popularidad regional" ? TEAL : SLATE), borderRadius: 4 }] },
+        options: barH(sinLeyenda(base())) });
+
+      new Chart(document.getElementById("c-w"), { type: "line",
+        data: { labels: peso.map(r => r.w), datasets: [
+          { label: "NDCG@10", data: peso.map(r => r["ndcg@10"]), borderColor: BLUE, backgroundColor: BLUE, yAxisID: "y", tension: .2 },
+          { label: "cobertura", data: peso.map(r => r.cobertura), borderColor: SLATE, backgroundColor: SLATE, yAxisID: "y2", borderDash: [5, 4], tension: .2 }] },
+        options: base({ scales: { x: { grid: { display: false }, title: { display: true, text: "w (peso de ALS)" } }, y: { grid: { color: GRID }, title: { display: true, text: "NDCG@10" } }, y2: { position: "right", grid: { display: false }, min: 0, max: 1, title: { display: true, text: "cobertura" } } } }) });
+
+      const grupos = ["más central que su monto", "resto", "más monto que centralidad"];
+      new Chart(document.getElementById("c-cons"), { type: "bar",
+        data: { labels: grupos, datasets: [{ data: grupos.map(g => cg[g].pct_consorcio), backgroundColor: [BLUE, SLATE, AMBER], borderRadius: 4, maxBarThickness: 70 }] },
+        options: (o => (o.scales.y.max = 100, o.scales.y.ticks = { callback: v => v + "%" }, o))(sinLeyenda(base())) });
+
+      new Chart(document.getElementById("c-gamma"), { type: "line",
+        data: { labels: gamma.map(r => r.gamma), datasets: [
+          { label: "Q", data: gamma.map(r => r.Q), borderColor: BLUE, backgroundColor: BLUE, tension: .2 },
+          { label: "estabilidad (NMI)", data: gamma.map(r => r.estabilidad), borderColor: TEAL, backgroundColor: TEAL, tension: .2 }] },
+        options: base({ scales: { x: { grid: { display: false }, title: { display: true, text: "γ" } }, y: { grid: { color: GRID }, min: 0.5, max: 1 } } }) });
+
+      const atr = [["familia_dom", "familia"], ["categoria_dom", "categoría"], ["region_dom", "región"], ["tipologia", "tipología"]].filter(([a]) => explica.some(r => r.particion === "louvain" && r.atributo === a && r.sin_dato === "excluido"));
+      new Chart(document.getElementById("c-ami"), { type: "bar",
+        data: { labels: atr.map(a => a[1]), datasets: [{ data: atr.map(([a]) => ami(a)), backgroundColor: atr.map(([a]) => a === "region_dom" ? SLATE : BLUE), borderRadius: 4, maxBarThickness: 70 }] },
+        options: sinLeyenda(base()) });
+
+      const mejor = {};
+      enl.forEach(r => { const k = r.modelo === "base" ? r.config : r.modelo; if (!mejor[k] || r.pr_auc > mejor[k].pr_auc) mejor[k] = r; });
+      const me = Object.entries(mejor).sort((a, b) => a[1].pr_auc - b[1].pr_auc);
+      new Chart(document.getElementById("c-enl"), { type: "bar",
+        data: { labels: me.map(([k, r]) => r.modelo === "base" ? k : `${k} (${r.config})`), datasets: [{ data: me.map(([, r]) => r.pr_auc), backgroundColor: me.map(([, r]) => r.modelo === "base" ? SLATE : BLUE), borderRadius: 4 }] },
+        options: (o => (o.scales.x.min = 0.4, o.scales.x.beginAtZero = false, o))(barH(sinLeyenda(base()))) });
+
+      new Chart(document.getElementById("c-top"), { type: "bar",
+        data: { labels: top.map(r => `top ${fmt(r.top)}`), datasets: [{ data: top.map(r => r["% aparece en 2025"]), backgroundColor: top.map(r => r.top === 100 ? AMBER : TEAL), borderRadius: 4, maxBarThickness: 60 }] },
+        options: (o => (o.scales.y.ticks = { callback: v => v + "%" }, o))(sinLeyenda(base())) });
+
+      const v = (x) => Math.abs(x) < 1 ? fmt(x, 3) : fmt(x, 2);
+      document.getElementById("t-desempeno").innerHTML = desemp.map(r =>
+        `<tr><td>${r.tecnica} (${r.parte})</td><td>${r.metrica}</td><td class="num"><strong>${v(r.valor)}</strong></td><td>${r.referencia}</td><td class="num">${v(r.valor_ref)}</td></tr>`).join("");
+    }
+
+    construir().catch(err => {
+      console.error(err);
+      const aviso = document.createElement("div");
+      aviso.className = "callout";
+      aviso.innerHTML = `<strong>No se pudieron cargar los datos.</strong> Sirve el repositorio desde su raíz (<code>python3 -m http.server</code>) para que el reporte lea <code>web/data/</code>. Las cifras del texto pueden estar desactualizadas. <small>(${err.message})</small>`;
+      document.querySelector("main").prepend(aviso);
+    });
+
+    const progreso = () => {
+      const r = document.documentElement, t = r.scrollHeight - r.clientHeight;
+      document.getElementById("reading-progress").style.width = `${Math.min(100, t > 0 ? r.scrollTop / t * 100 : 0)}%`;
+    };
+    addEventListener("scroll", progreso, { passive: true });
+    addEventListener("resize", progreso);
+    progreso();
+    addEventListener("DOMContentLoaded", () => window.renderMathInElement?.(document.body, {
+      delimiters: [{ left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false }], throwOnError: false }));
+  </script>
+</body>
+</html>

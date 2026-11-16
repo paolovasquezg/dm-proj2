@@ -101,3 +101,38 @@ Levanta el cluster de Spark y Jupyter con Docker
 - 07_Analisis/a_recuento.ipynb
 - 07_Analisis/b_hallazgos.ipynb
 - 07_Analisis/c_insights.ipynb
+
+### 8. Datos para la web
+
+Exporta a `web/data/` los JSON que usa la página:
+
+```bash
+python data/exportar.py
+```
+
+## Web interactiva
+
+Presentación por etapas del proceso y los resultados, en `web/`
+
+```bash
+python3 -m http.server -d web 8000
+```
+
+Abrir `http://localhost:8000`
+
+
+## Acceso publico
+
+Acceder a la web con los resultados en [paolovasquezg.github.io/dm-proj2](https://paolovasquezg.github.io/dm-proj2/)
+
+
+## Reporte técnico
+
+Documento con la metodología, los resultados y las conclusiones del proyecto, en [reporte.html](reporte.html)
+
+
+```bash
+python3 -m http.server 8001
+```
+
+Abrir `http://localhost:8001/reporte.html`

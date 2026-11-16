@@ -1,0 +1,20 @@
+[
+ {
+  "grafo":"núcleo",
+  "aristas":40957,
+  "seg_por_paso":642.3852944392,
+  "horas_minimo":7.1376143827,
+  "horas_cota_superior":7308.3818067626,
+  "orden_minimo":"~10^0 h",
+  "orden_superior":"~10^3 h"
+ },
+ {
+  "grafo":"completo",
+  "aristas":1639945,
+  "seg_por_paso":32980231.7390057668,
+  "horas_minimo":366447.0193222863,
+  "horas_cota_superior":15023823927.5621700287,
+  "orden_minimo":"~10^5 h",
+  "orden_superior":"~10^10 h"
+ }
+]

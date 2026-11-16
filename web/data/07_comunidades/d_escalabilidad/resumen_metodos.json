@@ -1,0 +1,44 @@
+[
+ {
+  "metodo":"louvain γ=1.25",
+  "corre_en":"local",
+  "grafo":"núcleo",
+  "Q":0.8700513458,
+  "seg":0.7132561445
+ },
+ {
+  "metodo":"espectral k=28",
+  "corre_en":"local",
+  "grafo":"núcleo",
+  "Q":0.8432983733,
+  "seg":3.1442019939
+ },
+ {
+  "metodo":"bigclam K=100",
+  "corre_en":"local",
+  "grafo":"núcleo",
+  "Q":null,
+  "seg":2.9100441933
+ },
+ {
+  "metodo":"LPA",
+  "corre_en":"Spark",
+  "grafo":"completo (Spark)",
+  "Q":0.625068358,
+  "seg":52.1
+ },
+ {
+  "metodo":"LPA",
+  "corre_en":"Spark",
+  "grafo":"sin hubs (Spark)",
+  "Q":0.6800728366,
+  "seg":46.1
+ },
+ {
+  "metodo":"LPA",
+  "corre_en":"local",
+  "grafo":"núcleo (local)",
+  "Q":0.7835817119,
+  "seg":0.4
+ }
+]

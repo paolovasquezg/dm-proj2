@@ -1,0 +1,17 @@
+[
+ {
+  "pregunta":"PQ1: Concentración y cautividad",
+  "respuesta":"30% de entidades cautivas, chicas o de obras, atadas a consorcios de un solo proceso; no falta oferta (217 alternativas) y no las capturan los proveedores centrales",
+  "evidencia":"KMeans + HHI (II), PageRank\/HITS (IV), alternativas del híbrido (III)"
+ },
+ {
+  "pregunta":"PQ2: Mercados y competencia",
+  "respuesta":"Mercados por rubro y luego región: 6 mercados latentes que agrupan 41 comunidades; 11 grupos cerrados como señales",
+  "evidencia":"Louvain, BigCLAM, LPA (V); Node2Vec + KMeans (VI)"
+ },
+ {
+  "pregunta":"PQ3: Sustitutos y afinidades",
+  "respuesta":"Sustitutos que compiten de verdad (34-40% vs 12%); afinidades inusuales = consorcios de una obra; pares afines en salud (lift ×7)",
+  "evidencia":"ALS, contenido, híbrido (III); predicción de enlaces (VI)"
+ }
+]

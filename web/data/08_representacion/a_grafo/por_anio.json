@@ -1,0 +1,17 @@
+[
+ {
+  "anio":2023,
+  "aristas":482854,
+  "nodos_activos":30632
+ },
+ {
+  "anio":2024,
+  "aristas":490070,
+  "nodos_activos":30973
+ },
+ {
+  "anio":2025,
+  "aristas":507875,
+  "nodos_activos":31667
+ }
+]

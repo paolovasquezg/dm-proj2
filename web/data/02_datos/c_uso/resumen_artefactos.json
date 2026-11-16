@@ -1,0 +1,42 @@
+[
+ {
+  "medida":"proveedores (features)",
+  "valor":86017.0
+ },
+ {
+  "medida":"entidades (features)",
+  "valor":2996.0
+ },
+ {
+  "medida":"pares entidad × proveedor",
+  "valor":136099.0
+ },
+ {
+  "medida":"densidad entidad × proveedor",
+  "valor":0.0005288214
+ },
+ {
+  "medida":"pares entidad × familia",
+  "valor":39348.0
+ },
+ {
+  "medida":"densidad entidad × familia",
+  "valor":0.0340701283
+ },
+ {
+  "medida":"vértices bipartito",
+  "valor":89009.0
+ },
+ {
+  "medida":"aristas bipartito",
+  "valor":136099.0
+ },
+ {
+  "medida":"vértices co-participación",
+  "valor":60213.0
+ },
+ {
+  "medida":"aristas co-participación",
+  "valor":1639945.0
+ }
+]

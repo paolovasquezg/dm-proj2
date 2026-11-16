@@ -1,0 +1,42 @@
+[
+ {
+  "medida":"ids crudos distintos",
+  "valor":260077
+ },
+ {
+  "medida":"nombres crudos distintos",
+  "valor":163168
+ },
+ {
+  "medida":"claves por identificador",
+  "valor":260074
+ },
+ {
+  "medida":"claves con > 1 variante de nombre",
+  "valor":544
+ },
+ {
+  "medida":"nombres sin identificador",
+  "valor":2
+ },
+ {
+  "medida":"  enlazados exactos",
+  "valor":0
+ },
+ {
+  "medida":"  enlazados por LSH",
+  "valor":0
+ },
+ {
+  "medida":"  nodos nuevos NOM:",
+  "valor":2
+ },
+ {
+  "medida":"pares posibles vinculadas",
+  "valor":71
+ },
+ {
+  "medida":"nodos proveedor finales",
+  "valor":260076
+ }
+]

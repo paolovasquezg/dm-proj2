@@ -1,0 +1,66 @@
+[
+ {
+  "parte":"II",
+  "tecnica":"KMeans++ vs Ward (proveedores)",
+  "metrica":"ARI entre métodos",
+  "valor":0.54,
+  "referencia":"azar",
+  "valor_ref":0.0
+ },
+ {
+  "parte":"III",
+  "tecnica":"Híbrido",
+  "metrica":"NDCG@10 (2025)",
+  "valor":0.0992,
+  "referencia":"popularidad regional",
+  "valor_ref":0.0807
+ },
+ {
+  "parte":"III",
+  "tecnica":"Sustitutos ALS",
+  "metrica":"% que co-participan",
+  "valor":0.337,
+  "referencia":"azar en la familia",
+  "valor_ref":0.12
+ },
+ {
+  "parte":"V",
+  "tecnica":"Louvain",
+  "metrica":"Q (binaria)",
+  "valor":0.8540244424,
+  "referencia":"nulo de configuración",
+  "valor_ref":0.2384977088
+ },
+ {
+  "parte":"V",
+  "tecnica":"Girvan–Newman",
+  "metrica":"NMI con la referencia",
+  "valor":0.9232082905,
+  "referencia":"azar",
+  "valor_ref":0.0
+ },
+ {
+  "parte":"V",
+  "tecnica":"BigCLAM",
+  "metrica":"AUC aristas retenidas",
+  "valor":0.9711449305,
+  "referencia":"producto de grados",
+  "valor_ref":0.8699939284
+ },
+ {
+  "parte":"VI",
+  "tecnica":"Node2Vec (dim)",
+  "metrica":"AUC coseno 2023 → 2024",
+  "valor":0.8788,
+  "referencia":"azar",
+  "valor_ref":0.5
+ },
+ {
+  "parte":"VI",
+  "tecnica":"Enlaces (random forest)",
+  "metrica":"PR-AUC test 2025",
+  "valor":0.7207,
+  "referencia":"Adamic-Adar",
+  "valor_ref":0.6367
+ }
+]

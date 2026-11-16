@@ -1,0 +1,116 @@
+[
+ {
+  "metodo_detalle":"Contratación Internacional",
+  "procesos":3104,
+  "pct_postor_unico":98.1,
+  "postores_mediana":1
+ },
+ {
+  "metodo_detalle":"Adjudicación Abreviada",
+  "procesos":1103,
+  "pct_postor_unico":94.7,
+  "postores_mediana":1
+ },
+ {
+  "metodo_detalle":"Contratación Directa",
+  "procesos":13412,
+  "pct_postor_unico":88.7,
+  "postores_mediana":1
+ },
+ {
+  "metodo_detalle":"Regímen Especial",
+  "procesos":5414,
+  "pct_postor_unico":82.2,
+  "postores_mediana":1
+ },
+ {
+  "metodo_detalle":"Convenio",
+  "procesos":4521,
+  "pct_postor_unico":59.9,
+  "postores_mediana":1
+ },
+ {
+  "metodo_detalle":"Adjudicación Selectiva",
+  "procesos":1539,
+  "pct_postor_unico":19.4,
+  "postores_mediana":3
+ },
+ {
+  "metodo_detalle":"Adjudicación Simplificada-Homologación",
+  "procesos":791,
+  "pct_postor_unico":5.3,
+  "postores_mediana":11
+ },
+ {
+  "metodo_detalle":"Subasta Inversa Electrónica",
+  "procesos":25131,
+  "pct_postor_unico":2.3,
+  "postores_mediana":7
+ },
+ {
+  "metodo_detalle":"Adjudicación Simplificada",
+  "procesos":91213,
+  "pct_postor_unico":1.7,
+  "postores_mediana":12
+ },
+ {
+  "metodo_detalle":"Licitación Pública Abreviada",
+  "procesos":14960,
+  "pct_postor_unico":1.5,
+  "postores_mediana":11
+ },
+ {
+  "metodo_detalle":"Concurso Público Abreviado",
+  "procesos":13238,
+  "pct_postor_unico":1.5,
+  "postores_mediana":11
+ },
+ {
+  "metodo_detalle":"Comparación de Precios",
+  "procesos":14574,
+  "pct_postor_unico":1.0,
+  "postores_mediana":3
+ },
+ {
+  "metodo_detalle":"Adjudicación Simplificada - Decreto Urgencia 032-2023",
+  "procesos":528,
+  "pct_postor_unico":0.8,
+  "postores_mediana":13
+ },
+ {
+  "metodo_detalle":"Concurso Público",
+  "procesos":8147,
+  "pct_postor_unico":0.6,
+  "postores_mediana":19
+ },
+ {
+  "metodo_detalle":"Concurso Público de Servicios",
+  "procesos":2319,
+  "pct_postor_unico":0.6,
+  "postores_mediana":18
+ },
+ {
+  "metodo_detalle":"Licitación Pública",
+  "procesos":11946,
+  "pct_postor_unico":0.5,
+  "postores_mediana":17
+ },
+ {
+  "metodo_detalle":"Procedimiento Especial de Contratación",
+  "procesos":621,
+  "pct_postor_unico":0.2,
+  "postores_mediana":20
+ },
+ {
+  "metodo_detalle":"Adjudicación Simplificada - Ley N° 31728",
+  "procesos":783,
+  "pct_postor_unico":0.0,
+  "postores_mediana":20
+ },
+ {
+  "metodo_detalle":"Concurso Público para Consultoría",
+  "procesos":873,
+  "pct_postor_unico":0.0,
+  "postores_mediana":20
+ }
+]

@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mercados y competencia en compras públicas · Minería de datos</title>
+  <meta name="description" content="Clustering, recomendación, PageRank, comunidades y embeddings sobre las contrataciones públicas del Perú 2023–2025">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+  <link rel="stylesheet" href="css/estilo.css">
+  <script src="https://cdn.jsdelivr.net/npm/plotly.js-cartesian-dist-min@2.35.2/plotly-cartesian.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+  <script defer src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
+</head>
+<body>
+  <header class="barra">
+    <div class="marca"><span class="marca-sello">OECE / OCDS</span><span>Contrataciones públicas <i>2023–2025</i></span></div>
+    <div class="etapa" id="etapa" aria-live="polite"></div>
+    <div class="acciones">
+      <button class="accion" id="abrir-indice" type="button" aria-haspopup="dialog" title="Abrir índice (G)">
+        <i data-lucide="layout-grid" aria-hidden="true"></i><span>Índice de vistas</span>
+      </button>
+      <button class="accion accion-icono" id="pantalla-completa" type="button" title="Pantalla completa (F)" aria-label="Pantalla completa">
+        <i data-lucide="maximize-2" aria-hidden="true"></i>
+      </button>
+      <div class="estado">
+        <div class="contador" id="contador"></div>
+        <div class="progreso" aria-hidden="true"><div id="progreso"></div></div>
+      </div>
+    </div>
+  </header>
+
+  <main id="diapo" class="diapo" tabindex="-1" aria-live="polite"></main>
+
+  <nav class="navegacion" aria-label="Navegación entre diapositivas">
+    <button class="nav" id="anterior" aria-label="Diapositiva anterior"><i data-lucide="arrow-left" aria-hidden="true"></i><span class="nav-texto">Anterior</span></button>
+    <span class="contador-nav" id="contador-nav" aria-hidden="true"></span>
+    <button class="nav" id="siguiente" aria-label="Diapositiva siguiente"><span class="nav-texto">Siguiente</span><i data-lucide="arrow-right" aria-hidden="true"></i></button>
+  </nav>
+
+  <aside class="atajos" aria-label="Atajos de teclado">
+    <span><kbd>←</kbd><kbd>→</kbd> navegar</span><span><kbd>G</kbd> índice</span><span><kbd>F</kbd> pantalla completa</span>
+  </aside>
+
+  <dialog id="indice" class="indice" aria-labelledby="indice-titulo">
+    <div class="indice-cabecera">
+      <div><span class="sobrelinea">Explorar el análisis</span><h2 id="indice-titulo">Índice de diapositivas</h2></div>
+      <button class="cerrar-indice" id="cerrar-indice" type="button" aria-label="Cerrar índice"><i data-lucide="x" aria-hidden="true"></i></button>
+    </div>
+    <div class="indice-rejilla" id="indice-rejilla"></div>
+    <p class="indice-ayuda"><kbd>Esc</kbd> para cerrar · selecciona una vista para saltar directamente</p>
+  </dialog>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

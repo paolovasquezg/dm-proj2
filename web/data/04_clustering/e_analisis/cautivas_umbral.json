@@ -1,0 +1,26 @@
+[
+ {
+  "umbral_hhi":0.25,
+  "entidades":807,
+  "pct_entidades":29.9,
+  "postor_unico_med":0.0,
+  "directa_med":0.0,
+  "procesos_med":12.0
+ },
+ {
+  "umbral_hhi":0.4,
+  "entidades":332,
+  "pct_entidades":12.3,
+  "postor_unico_med":0.0,
+  "directa_med":0.0,
+  "procesos_med":11.0
+ },
+ {
+  "umbral_hhi":0.5,
+  "entidades":191,
+  "pct_entidades":7.1,
+  "postor_unico_med":0.0,
+  "directa_med":0.0,
+  "procesos_med":10.0
+ }
+]

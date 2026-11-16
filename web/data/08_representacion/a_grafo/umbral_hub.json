@@ -1,0 +1,38 @@
+[
+ {
+  "percentil":1.0,
+  "corte_grado":null,
+  "hubs_retirados":0,
+  "% aristas perdidas":0.0,
+  "% masa de visita retirada":0.0,
+  "% nodos en la gigante":96.28,
+  "masa del top 1% restante":35.48
+ },
+ {
+  "percentil":0.999,
+  "corte_grado":2545.52,
+  "hubs_retirados":61,
+  "% aristas perdidas":15.53,
+  "% masa de visita retirada":11.42,
+  "% nodos en la gigante":94.67,
+  "masa del top 1% restante":28.74
+ },
+ {
+  "percentil":0.995,
+  "corte_grado":837.88,
+  "hubs_retirados":302,
+  "% aristas perdidas":33.43,
+  "% masa de visita retirada":24.31,
+  "% nodos en la gigante":92.63,
+  "masa del top 1% restante":23.27
+ },
+ {
+  "percentil":0.99,
+  "corte_grado":554.76,
+  "hubs_retirados":603,
+  "% aristas perdidas":43.82,
+  "% masa de visita retirada":32.23,
+  "% nodos en la gigante":91.65,
+  "masa del top 1% restante":20.64
+ }
+]

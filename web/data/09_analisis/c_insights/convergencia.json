@@ -1,0 +1,149 @@
+[
+ {
+  "a":"tipología KMeans (II)",
+  "b":"Louvain (V)",
+  "n":4311,
+  "nmi":0.0996638108,
+  "ari":0.0201629997
+ },
+ {
+  "a":"tipología KMeans (II)",
+  "b":"BigCLAM dominante (V)",
+  "n":4311,
+  "nmi":0.0761756614,
+  "ari":0.0131548764
+ },
+ {
+  "a":"tipología KMeans (II)",
+  "b":"LPA sin hubs (V)",
+  "n":11925,
+  "nmi":0.1062581149,
+  "ari":0.0032961693
+ },
+ {
+  "a":"tipología KMeans (II)",
+  "b":"grupos latentes (VI)",
+  "n":11662,
+  "nmi":0.0892558958,
+  "ari":0.029837965
+ },
+ {
+  "a":"tipología KMeans (II)",
+  "b":"rubro: segmento",
+  "n":11594,
+  "nmi":0.0696111336,
+  "ari":0.0029727148
+ },
+ {
+  "a":"tipología KMeans (II)",
+  "b":"región",
+  "n":11662,
+  "nmi":0.0352983576,
+  "ari":-0.0428106038
+ },
+ {
+  "a":"Louvain (V)",
+  "b":"BigCLAM dominante (V)",
+  "n":7114,
+  "nmi":0.7181233923,
+  "ari":0.5571914304
+ },
+ {
+  "a":"Louvain (V)",
+  "b":"LPA sin hubs (V)",
+  "n":7114,
+  "nmi":0.8149560189,
+  "ari":0.6723573105
+ },
+ {
+  "a":"Louvain (V)",
+  "b":"grupos latentes (VI)",
+  "n":7114,
+  "nmi":0.5299968109,
+  "ari":0.2739979605
+ },
+ {
+  "a":"Louvain (V)",
+  "b":"rubro: segmento",
+  "n":7113,
+  "nmi":0.652206132,
+  "ari":0.347478416
+ },
+ {
+  "a":"Louvain (V)",
+  "b":"región",
+  "n":7114,
+  "nmi":0.2225306183,
+  "ari":0.0220567783
+ },
+ {
+  "a":"BigCLAM dominante (V)",
+  "b":"LPA sin hubs (V)",
+  "n":7114,
+  "nmi":0.7271247291,
+  "ari":0.5120445304
+ },
+ {
+  "a":"BigCLAM dominante (V)",
+  "b":"grupos latentes (VI)",
+  "n":7114,
+  "nmi":0.4733007265,
+  "ari":0.2447378008
+ },
+ {
+  "a":"BigCLAM dominante (V)",
+  "b":"rubro: segmento",
+  "n":7113,
+  "nmi":0.5798305347,
+  "ari":0.2683627843
+ },
+ {
+  "a":"BigCLAM dominante (V)",
+  "b":"región",
+  "n":7114,
+  "nmi":0.2669954976,
+  "ari":0.0274909512
+ },
+ {
+  "a":"LPA sin hubs (V)",
+  "b":"grupos latentes (VI)",
+  "n":56948,
+  "nmi":0.4443578369,
+  "ari":0.3135282122
+ },
+ {
+  "a":"LPA sin hubs (V)",
+  "b":"rubro: segmento",
+  "n":55212,
+  "nmi":0.4929667941,
+  "ari":0.3074855411
+ },
+ {
+  "a":"LPA sin hubs (V)",
+  "b":"región",
+  "n":56948,
+  "nmi":0.2427470804,
+  "ari":-0.0030823496
+ },
+ {
+  "a":"grupos latentes (VI)",
+  "b":"rubro: segmento",
+  "n":55212,
+  "nmi":0.3696866916,
+  "ari":0.2735879279
+ },
+ {
+  "a":"grupos latentes (VI)",
+  "b":"región",
+  "n":56948,
+  "nmi":0.1207333362,
+  "ari":0.0861904344
+ },
+ {
+  "a":"rubro: segmento",
+  "b":"región",
+  "n":55212,
+  "nmi":0.0636944021,
+  "ari":-0.0417266431
+ }
+]

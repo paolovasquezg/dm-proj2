@@ -1,0 +1,172 @@
+[
+ {
+  "parte":"II",
+  "tecnica":"KMeans++",
+  "PQ1":2,
+  "PQ2":1,
+  "PQ3":0,
+  "aporte":"4 tipologías estables; cautivas = pequeñas y de obras",
+  "limitacion":"Solo actores con ≥ 3-5 procesos",
+  "total":3
+ },
+ {
+  "parte":"II",
+  "tecnica":"DBSCAN \/ HDBSCAN",
+  "PQ1":1,
+  "PQ2":0,
+  "PQ3":0,
+  "aporte":"Consenso de outliers",
+  "limitacion":"Un grupo gigante o 19-27% de ruido: densidad pareja",
+  "total":1
+ },
+ {
+  "parte":"II",
+  "tecnica":"Ward",
+  "PQ1":0,
+  "PQ2":1,
+  "PQ3":0,
+  "aporte":"Confirma KMeans (ARI 0.54)",
+  "limitacion":"Muestra de 5,000 (matriz n²)",
+  "total":1
+ },
+ {
+  "parte":"III",
+  "tecnica":"Vecindario",
+  "PQ1":0,
+  "PQ2":0,
+  "PQ3":1,
+  "aporte":"NDCG 0.095, cerca del híbrido",
+  "limitacion":"Pocas vecinas con proveedores en común",
+  "total":1
+ },
+ {
+  "parte":"III",
+  "tecnica":"Contenido",
+  "PQ1":0,
+  "PQ2":0,
+  "PQ3":1,
+  "aporte":"Sustitutos que compiten (40%) y cobertura 54%",
+  "limitacion":"NDCG bajo solo (0.036)",
+  "total":1
+ },
+ {
+  "parte":"III",
+  "tecnica":"ALS",
+  "PQ1":1,
+  "PQ2":0,
+  "PQ3":2,
+  "aporte":"Sustitutos reales (34% vs 12%) y afinidades inusuales",
+  "limitacion":"Cola larga: 34% de relaciones nuevas predecibles",
+  "total":3
+ },
+ {
+  "parte":"III",
+  "tecnica":"Híbrido",
+  "PQ1":1,
+  "PQ2":0,
+  "PQ3":2,
+  "aporte":"Mejor NDCG (0.099); alternativas de las cautivas",
+  "limitacion":"Ganancia chica sobre la regional (0.081)",
+  "total":3
+ },
+ {
+  "parte":"IV",
+  "tecnica":"PageRank",
+  "PQ1":2,
+  "PQ2":0,
+  "PQ3":0,
+  "aporte":"Cautivas periféricas; centralidad vs monto (consorcios)",
+  "limitacion":"Con peso monto copia el ranking de monto",
+  "total":2
+ },
+ {
+  "parte":"IV",
+  "tecnica":"HITS",
+  "PQ1":1,
+  "PQ2":0,
+  "PQ3":0,
+  "aporte":"La medida menos redundante",
+  "limitacion":"Se concentra en el núcleo de salud",
+  "total":1
+ },
+ {
+  "parte":"V",
+  "tecnica":"Girvan–Newman",
+  "PQ1":0,
+  "PQ2":1,
+  "PQ3":0,
+  "aporte":"Confirma Louvain en una muestra (NMI 0.92)",
+  "limitacion":"No escala: ~7,300 h en el núcleo",
+  "total":1
+ },
+ {
+  "parte":"V",
+  "tecnica":"Espectral",
+  "PQ1":0,
+  "PQ2":1,
+  "PQ3":0,
+  "aporte":"Confirma Louvain (NMI 0.82)",
+  "limitacion":"k fijo; grupos de tamaño parecido",
+  "total":1
+ },
+ {
+  "parte":"V",
+  "tecnica":"Louvain",
+  "PQ1":0,
+  "PQ2":2,
+  "PQ3":0,
+  "aporte":"Mercados por rubro (Q 0.87); grupos cerrados",
+  "limitacion":"Solo el núcleo (12% de proveedores)",
+  "total":2
+ },
+ {
+  "parte":"V",
+  "tecnica":"BigCLAM",
+  "PQ1":0,
+  "PQ2":1,
+  "PQ3":0,
+  "aporte":"10% de proveedores puente",
+  "limitacion":"Hubs residuales en ≥ 10 comunidades",
+  "total":1
+ },
+ {
+  "parte":"V",
+  "tecnica":"LPA (Spark)",
+  "PQ1":0,
+  "PQ2":1,
+  "PQ3":0,
+  "aporte":"Escala al grafo completo",
+  "limitacion":"Fragmenta (Q 0.63-0.68), no converge",
+  "total":1
+ },
+ {
+  "parte":"VI",
+  "tecnica":"Node2Vec",
+  "PQ1":0,
+  "PQ2":2,
+  "PQ3":1,
+  "aporte":"6 mercados en todo el grafo; anida comunidades",
+  "limitacion":"p y q casi no cambian nada (cliques)",
+  "total":3
+ },
+ {
+  "parte":"VI",
+  "tecnica":"SVD",
+  "PQ1":0,
+  "PQ2":1,
+  "PQ3":0,
+  "aporte":"Rubro igual que Node2Vec",
+  "limitacion":"Sin rol; peor en enlaces (0.62)",
+  "total":1
+ },
+ {
+  "parte":"VI",
+  "tecnica":"Predicción de enlaces",
+  "PQ1":0,
+  "PQ2":0,
+  "PQ3":2,
+  "aporte":"Sustitutos por posición (lift ×7)",
+  "limitacion":"Precisión absoluta baja (9% en el top 100)",
+  "total":2
+ }
+]

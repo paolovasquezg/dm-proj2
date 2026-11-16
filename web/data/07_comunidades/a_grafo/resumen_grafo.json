@@ -1,0 +1,54 @@
+[
+ {
+  "medida":"nodos",
+  "valor":60213.0
+ },
+ {
+  "medida":"aristas",
+  "valor":1639945.0
+ },
+ {
+  "medida":"densidad",
+  "valor":0.0009046612
+ },
+ {
+  "medida":"nodos aislados",
+  "valor":0.0
+ },
+ {
+  "medida":"grado p50",
+  "valor":17.0
+ },
+ {
+  "medida":"grado p90",
+  "valor":120.0
+ },
+ {
+  "medida":"grado p99",
+  "valor":529.0
+ },
+ {
+  "medida":"grado máximo",
+  "valor":12059.0
+ },
+ {
+  "medida":"n_coparticipa p50",
+  "valor":3.0
+ },
+ {
+  "medida":"n_coparticipa p90",
+  "valor":9.0
+ },
+ {
+  "medida":"n_coparticipa p99",
+  "valor":44.0
+ },
+ {
+  "medida":"% aristas con 2 procesos (el mínimo)",
+  "valor":45.6665314995
+ },
+ {
+  "medida":"% nodos consorcio",
+  "valor":0.7274176673
+ }
+]

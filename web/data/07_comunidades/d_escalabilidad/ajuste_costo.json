@@ -1,0 +1,27 @@
+[
+ {
+  "metodo":"bigclam",
+  "exponente":2.0579744219,
+  "log_a":-24.4779310725
+ },
+ {
+  "metodo":"espectral",
+  "exponente":1.3923791807,
+  "log_a":-15.079958674
+ },
+ {
+  "metodo":"girvan-newman (1 paso)",
+  "exponente":2.9394413398,
+  "log_a":-24.7524959662
+ },
+ {
+  "metodo":"louvain",
+  "exponente":0.9912967834,
+  "log_a":-11.2191354994
+ },
+ {
+  "metodo":"lpa",
+  "exponente":0.7019610872,
+  "log_a":-12.0618534809
+ }
+]

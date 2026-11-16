@@ -1,0 +1,82 @@
+[
+ {
+  "sujeto":"entidad",
+  "cluster":0,
+  "n":909,
+  "pct_actores":33.7,
+  "pct_monto":2.4,
+  "mediana_procesos":17.0,
+  "mediana_monto":3812999.0,
+  "rasgos":"log_monto_total ↓0.8σ, log_monto_mediano ↓0.7σ, log_n_procesos ↓0.7σ"
+ },
+ {
+  "sujeto":"entidad",
+  "cluster":1,
+  "n":234,
+  "pct_actores":8.7,
+  "pct_monto":13.8,
+  "mediana_procesos":53.5,
+  "mediana_monto":25543935.0,
+  "rasgos":"pct_postor_unico ↑2.4σ, pct_directa ↑2.2σ, log_postores_promedio ↓0.8σ"
+ },
+ {
+  "sujeto":"entidad",
+  "cluster":2,
+  "n":680,
+  "pct_actores":25.2,
+  "pct_monto":6.6,
+  "mediana_procesos":22.0,
+  "mediana_monto":14437553.0,
+  "rasgos":"pct_obras ↑1.3σ, log_monto_mediano ↑0.8σ, pct_bienes ↓0.7σ"
+ },
+ {
+  "sujeto":"entidad",
+  "cluster":3,
+  "n":873,
+  "pct_actores":32.4,
+  "pct_monto":77.2,
+  "mediana_procesos":118.0,
+  "mediana_monto":49981212.0,
+  "rasgos":"log_n_procesos ↑1.0σ, log_monto_total ↑0.8σ, share_top_proveedores ↓0.7σ"
+ },
+ {
+  "sujeto":"proveedor",
+  "cluster":0,
+  "n":2394,
+  "pct_actores":18.0,
+  "pct_monto":50.4,
+  "mediana_procesos":16.0,
+  "mediana_monto":4548582.0,
+  "rasgos":"log_n_entidades ↑1.6σ, meses_activos ↑1.5σ, log_n_regiones ↑1.4σ"
+ },
+ {
+  "sujeto":"proveedor",
+  "cluster":1,
+  "n":8252,
+  "pct_actores":62.0,
+  "pct_monto":14.5,
+  "mediana_procesos":4.0,
+  "mediana_monto":735895.0,
+  "rasgos":"pct_postor_unico ↓0.4σ, meses_activos ↓0.3σ, log_n_entidades ↓0.3σ"
+ },
+ {
+  "sujeto":"proveedor",
+  "cluster":2,
+  "n":1650,
+  "pct_actores":12.4,
+  "pct_monto":2.7,
+  "mediana_procesos":3.0,
+  "mediana_monto":229986.0,
+  "rasgos":"pct_postor_unico ↑2.2σ, tasa_exito ↑1.8σ, pct_directa ↑1.0σ"
+ },
+ {
+  "sujeto":"proveedor",
+  "cluster":3,
+  "n":1021,
+  "pct_actores":7.7,
+  "pct_monto":32.4,
+  "mediana_procesos":5.0,
+  "mediana_monto":10417264.0,
+  "rasgos":"pct_obras ↑2.7σ, log_monto_mediano ↑2.0σ, log_monto_total ↑1.3σ"
+ }
+]

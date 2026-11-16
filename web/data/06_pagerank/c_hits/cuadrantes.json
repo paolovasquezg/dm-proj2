@@ -1,0 +1,22 @@
+[
+ {
+  "alto_pr":false,
+  "alto_hits":false,
+  "proveedores":84494
+ },
+ {
+  "alto_pr":false,
+  "alto_hits":true,
+  "proveedores":662
+ },
+ {
+  "alto_pr":true,
+  "alto_hits":false,
+  "proveedores":662
+ },
+ {
+  "alto_pr":true,
+  "alto_hits":true,
+  "proveedores":199
+ }
+]

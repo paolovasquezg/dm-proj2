@@ -1,0 +1,58 @@
+[
+ {
+  "familia":"7214",
+  "als":35.8,
+  "azar (misma familia)":2.3,
+  "contenido":36.6,
+  "proveedores":918
+ },
+ {
+  "familia":"8110",
+  "als":33.4,
+  "azar (misma familia)":8.3,
+  "contenido":44.5,
+  "proveedores":618
+ },
+ {
+  "familia":"7212",
+  "als":20.9,
+  "azar (misma familia)":3.6,
+  "contenido":24.6,
+  "proveedores":599
+ },
+ {
+  "familia":"1510",
+  "als":42.5,
+  "azar (misma familia)":1.5,
+  "contenido":38.3,
+  "proveedores":567
+ },
+ {
+  "familia":"7215",
+  "als":14.8,
+  "azar (misma familia)":2.8,
+  "contenido":24.5,
+  "proveedores":494
+ },
+ {
+  "familia":"3011",
+  "als":42.1,
+  "azar (misma familia)":8.7,
+  "contenido":62.5,
+  "proveedores":343
+ },
+ {
+  "familia":"9210",
+  "als":34.2,
+  "azar (misma familia)":20.9,
+  "contenido":54.4,
+  "proveedores":220
+ },
+ {
+  "familia":"4111",
+  "als":45.8,
+  "azar (misma familia)":12.7,
+  "contenido":54.1,
+  "proveedores":212
+ }
+]

@@ -1,0 +1,32 @@
+[
+ {
+  "senal":"Grupos cerrados (11)",
+  "parte":"V",
+  "por_que_no_es_acusacion":"Coincidir mucho es típico de mercados chicos o especializados; la red no distingue un mercado de un acuerdo"
+ },
+ {
+  "senal":"Coinciden y casi no ganan",
+  "parte":"V",
+  "por_que_no_es_acusacion":"Puede ser oferta de baja probabilidad, no acompañamiento"
+ },
+ {
+  "senal":"Afinidades inusuales (5%)",
+  "parte":"III",
+  "por_que_no_es_acusacion":"Son relaciones únicas (una obra), con más competencia que el resto"
+ },
+ {
+  "senal":"Postores masivos (61)",
+  "parte":"V, VI",
+  "por_que_no_es_acusacion":"Ofertar a miles de procesos es un patrón de oferta legal"
+ },
+ {
+  "senal":"Entidades cautivas (30%)",
+  "parte":"II, IV",
+  "por_que_no_es_acusacion":"Depender de un consorcio de obra es esperable en entidades chicas con una obra grande"
+ },
+ {
+  "senal":"Enlaces predichos",
+  "parte":"VI",
+  "por_que_no_es_acusacion":"Una afinidad estructural no implica que deban competir: especialización, capacidad, logística"
+ }
+]

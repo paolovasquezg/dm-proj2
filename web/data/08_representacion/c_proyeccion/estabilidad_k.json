@@ -1,0 +1,44 @@
+[
+ {
+  "k":4,
+  "ari_semillas":0.494,
+  "% grupo mayor p1_q1":39.015,
+  "% grupo mayor svd":37.835
+ },
+ {
+  "k":6,
+  "ari_semillas":0.996,
+  "% grupo mayor p1_q1":20.693,
+  "% grupo mayor svd":35.929
+ },
+ {
+  "k":8,
+  "ari_semillas":0.757,
+  "% grupo mayor p1_q1":18.329,
+  "% grupo mayor svd":33.661
+ },
+ {
+  "k":10,
+  "ari_semillas":0.599,
+  "% grupo mayor p1_q1":16.859,
+  "% grupo mayor svd":31.278
+ },
+ {
+  "k":12,
+  "ari_semillas":0.676,
+  "% grupo mayor p1_q1":16.887,
+  "% grupo mayor svd":32.754
+ },
+ {
+  "k":15,
+  "ari_semillas":0.811,
+  "% grupo mayor p1_q1":13.475,
+  "% grupo mayor svd":19.246
+ },
+ {
+  "k":20,
+  "ari_semillas":0.787,
+  "% grupo mayor p1_q1":9.298,
+  "% grupo mayor svd":18.167
+ }
+]

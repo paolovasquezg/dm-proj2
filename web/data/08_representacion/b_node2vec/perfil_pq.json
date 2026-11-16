@@ -1,0 +1,101 @@
+[
+ {
+  "config":"p0.25_q0.25",
+  "% vecinos en el grafo":27.238,
+  "% misma región":61.688,
+  "% misma familia":53.8245852539,
+  "% mismo segmento":69.4075663275,
+  "% misma tipología":65.3784219002,
+  "rol (Spearman grado)":0.8026185924
+ },
+ {
+  "config":"p0.25_q1",
+  "% vecinos en el grafo":27.286,
+  "% misma región":60.202,
+  "% misma familia":53.8492586141,
+  "% mismo segmento":69.535199898,
+  "% misma tipología":65.4903185509,
+  "rol (Spearman grado)":0.8191653167
+ },
+ {
+  "config":"p0.25_q4",
+  "% vecinos en el grafo":27.118,
+  "% misma región":59.338,
+  "% misma familia":53.9514900102,
+  "% mismo segmento":69.3785980359,
+  "% misma tipología":65.99756691,
+  "rol (Spearman grado)":0.8220923469
+ },
+ {
+  "config":"p1_q0.25",
+  "% vecinos en el grafo":27.098,
+  "% misma región":61.628,
+  "% misma familia":53.5086044094,
+  "% mismo segmento":69.2257092537,
+  "% misma tipología":65.9368963297,
+  "rol (Spearman grado)":0.7988979172
+ },
+ {
+  "config":"p1_q1",
+  "% vecinos en el grafo":27.282,
+  "% misma región":60.756,
+  "% misma familia":53.8786604659,
+  "% mismo segmento":69.5610626234,
+  "% misma tipología":66.1395348837,
+  "rol (Spearman grado)":0.8125765883
+ },
+ {
+  "config":"p1_q4",
+  "% vecinos en el grafo":26.92,
+  "% misma región":58.876,
+  "% misma familia":54.0430495175,
+  "% mismo segmento":69.5429965009,
+  "% misma tipología":65.3333333333,
+  "rol (Spearman grado)":0.8297865049
+ },
+ {
+  "config":"p4_q0.25",
+  "% vecinos en el grafo":27.31,
+  "% misma región":61.65,
+  "% misma familia":53.6406117247,
+  "% mismo segmento":69.209855565,
+  "% misma tipología":66.2592473464,
+  "rol (Spearman grado)":0.8005647171
+ },
+ {
+  "config":"p4_q1",
+  "% vecinos en el grafo":27.272,
+  "% misma región":60.77,
+  "% misma familia":53.8939028007,
+  "% mismo segmento":69.4906995466,
+  "% misma tipología":65.6084656085,
+  "rol (Spearman grado)":0.8166764096
+ },
+ {
+  "config":"p4_q4",
+  "% vecinos en el grafo":26.684,
+  "% misma región":59.384,
+  "% misma familia":53.7594781209,
+  "% mismo segmento":69.1934595671,
+  "% misma tipología":66.6267225884,
+  "rol (Spearman grado)":0.8305275659
+ },
+ {
+  "config":"svd",
+  "% vecinos en el grafo":26.904,
+  "% misma región":57.532,
+  "% misma familia":52.9601246368,
+  "% mismo segmento":68.9923786265,
+  "% misma tipología":62.0921012504,
+  "rol (Spearman grado)":0.495345966
+ },
+ {
+  "config":"al azar",
+  "% vecinos en el grafo":0.09,
+  "% misma región":13.058,
+  "% misma familia":6.4451756714,
+  "% mismo segmento":15.7775183102,
+  "% misma tipología":50.5139500734,
+  "rol (Spearman grado)":-0.0058204442
+ }
+]

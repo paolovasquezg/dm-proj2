@@ -1,0 +1,57 @@
+[
+ {
+  "grupo":"p ≤ 1%",
+  "relaciones":965,
+  "pct_monto":0.6,
+  "monto_mediano":217851,
+  "postor_unico":0.073,
+  "es_directa":0.07,
+  "coseno_contenido":0.8270000219,
+  "pct_prov_una_entidad":92.3,
+  "pct_consorcio":64.9
+ },
+ {
+  "grupo":"p ≤ 5%",
+  "relaciones":4805,
+  "pct_monto":3.0,
+  "monto_mediano":188100,
+  "postor_unico":0.063,
+  "es_directa":0.053,
+  "coseno_contenido":0.6579999924,
+  "pct_prov_una_entidad":81.4,
+  "pct_consorcio":54.6
+ },
+ {
+  "grupo":"p ≤ 10%",
+  "relaciones":9604,
+  "pct_monto":5.5,
+  "monto_mediano":188832,
+  "postor_unico":0.07,
+  "es_directa":0.063,
+  "coseno_contenido":0.6200000048,
+  "pct_prov_una_entidad":76.7,
+  "pct_consorcio":50.6
+ },
+ {
+  "grupo":"resto",
+  "relaciones":91217,
+  "pct_monto":97.0,
+  "monto_mediano":209800,
+  "postor_unico":0.118,
+  "es_directa":0.073,
+  "coseno_contenido":0.4469999969,
+  "pct_prov_una_entidad":52.2,
+  "pct_consorcio":26.9
+ },
+ {
+  "grupo":"todas",
+  "relaciones":96022,
+  "pct_monto":100.0,
+  "monto_mediano":208178,
+  "postor_unico":0.115,
+  "es_directa":0.072,
+  "coseno_contenido":0.4589999914,
+  "pct_prov_una_entidad":53.6,
+  "pct_consorcio":28.3
+ }
+]

@@ -1,0 +1,26 @@
+[
+ {
+  "grupo":"más central que su monto",
+  "proveedores":860,
+  "pct_consorcio":0.6,
+  "grado_med":17.0,
+  "monto_med":9292638.0,
+  "entidades_med":17.0
+ },
+ {
+  "grupo":"más monto que centralidad",
+  "proveedores":860,
+  "pct_consorcio":82.7,
+  "grado_med":1.0,
+  "monto_med":21463682.8000000007,
+  "entidades_med":1.0
+ },
+ {
+  "grupo":"resto",
+  "proveedores":84277,
+  "pct_consorcio":49.7,
+  "grado_med":1.0,
+  "monto_med":290387.6,
+  "entidades_med":1.0
+ }
+]

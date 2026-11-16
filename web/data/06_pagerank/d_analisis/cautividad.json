@@ -1,0 +1,18 @@
+[
+ {
+  "cautiva":0,
+  "entidades":1889,
+  "pct_pr_med":0.674,
+  "pct_hits_med":0.647,
+  "grado_med":35.0,
+  "pct_en_gigante":99.1
+ },
+ {
+  "cautiva":1,
+  "entidades":807,
+  "pct_pr_med":0.293,
+  "pct_hits_med":0.329,
+  "grado_med":8.0,
+  "pct_en_gigante":92.689
+ }
+]

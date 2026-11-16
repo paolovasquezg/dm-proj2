@@ -1,0 +1,66 @@
+[
+ {
+  "modelo":"híbrido",
+  "precision@10":0.0458,
+  "recall@10":0.1226,
+  "ndcg@10":0.0992,
+  "hit@10":0.3527,
+  "cobertura":0.3323
+ },
+ {
+  "modelo":"user-user",
+  "precision@10":0.0439,
+  "recall@10":0.1037,
+  "ndcg@10":0.0946,
+  "hit@10":0.3305,
+  "cobertura":0.2219
+ },
+ {
+  "modelo":"ALS",
+  "precision@10":0.0435,
+  "recall@10":0.1144,
+  "ndcg@10":0.0943,
+  "hit@10":0.3385,
+  "cobertura":0.2972
+ },
+ {
+  "modelo":"popularidad regional",
+  "precision@10":0.0358,
+  "recall@10":0.1008,
+  "ndcg@10":0.0807,
+  "hit@10":0.286,
+  "cobertura":0.04
+ },
+ {
+  "modelo":"item-item",
+  "precision@10":0.0265,
+  "recall@10":0.0595,
+  "ndcg@10":0.0525,
+  "hit@10":0.2079,
+  "cobertura":0.5984
+ },
+ {
+  "modelo":"contenido (exacto)",
+  "precision@10":0.0204,
+  "recall@10":0.0465,
+  "ndcg@10":0.0364,
+  "hit@10":0.1728,
+  "cobertura":0.5395
+ },
+ {
+  "modelo":"contenido (HNSW)",
+  "precision@10":0.0203,
+  "recall@10":0.0464,
+  "ndcg@10":0.0363,
+  "hit@10":0.1723,
+  "cobertura":0.5391
+ },
+ {
+  "modelo":"popularidad global",
+  "precision@10":0.0157,
+  "recall@10":0.0307,
+  "ndcg@10":0.0281,
+  "hit@10":0.1378,
+  "cobertura":0.0019
+ }
+]

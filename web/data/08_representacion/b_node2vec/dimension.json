@@ -1,0 +1,17 @@
+[
+ {
+  "dim":32,
+  "auc_coseno":0.8788,
+  "tiempo_s":69.8245
+ },
+ {
+  "dim":64,
+  "auc_coseno":0.8621,
+  "tiempo_s":144.7467
+ },
+ {
+  "dim":128,
+  "auc_coseno":0.853,
+  "tiempo_s":261.1277
+ }
+]

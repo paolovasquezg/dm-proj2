@@ -1,0 +1,82 @@
+[
+ {
+  "sujeto":"entidad",
+  "metodo":"KMeans++",
+  "parametros":"k=4",
+  "corre_en":"Spark",
+  "n":2696,
+  "n_clusters":4,
+  "pct_ruido":0.0,
+  "silueta":0.203
+ },
+ {
+  "sujeto":"entidad",
+  "metodo":"DBSCAN",
+  "parametros":"eps=1.74, min_samples=5",
+  "corre_en":"local",
+  "n":2696,
+  "n_clusters":2,
+  "pct_ruido":2.6,
+  "silueta":0.438
+ },
+ {
+  "sujeto":"entidad",
+  "metodo":"HDBSCAN",
+  "parametros":"min_cluster_size=10, min_samples=1",
+  "corre_en":"local",
+  "n":2696,
+  "n_clusters":2,
+  "pct_ruido":18.8,
+  "silueta":0.141
+ },
+ {
+  "sujeto":"entidad",
+  "metodo":"Jerárquico",
+  "parametros":"ward, k=4",
+  "corre_en":"local (muestra)",
+  "n":2696,
+  "n_clusters":4,
+  "pct_ruido":0.0,
+  "silueta":0.122
+ },
+ {
+  "sujeto":"proveedor",
+  "metodo":"KMeans++",
+  "parametros":"k=4",
+  "corre_en":"Spark",
+  "n":13317,
+  "n_clusters":4,
+  "pct_ruido":0.0,
+  "silueta":0.337
+ },
+ {
+  "sujeto":"proveedor",
+  "metodo":"DBSCAN",
+  "parametros":"eps=1.18, min_samples=5",
+  "corre_en":"local",
+  "n":13317,
+  "n_clusters":6,
+  "pct_ruido":2.6,
+  "silueta":0.291
+ },
+ {
+  "sujeto":"proveedor",
+  "metodo":"HDBSCAN",
+  "parametros":"min_cluster_size=100, min_samples=5",
+  "corre_en":"local",
+  "n":13317,
+  "n_clusters":6,
+  "pct_ruido":27.0,
+  "silueta":0.211
+ },
+ {
+  "sujeto":"proveedor",
+  "metodo":"Jerárquico",
+  "parametros":"ward, k=4",
+  "corre_en":"local (muestra)",
+  "n":5000,
+  "n_clusters":4,
+  "pct_ruido":0.0,
+  "silueta":0.346
+ }
+]

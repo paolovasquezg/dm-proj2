@@ -1,0 +1,416 @@
+{
+ "02_datos": [
+  {
+   "archivo": "02_datos/a_entendimiento/conteos_staging.json",
+   "origen": "00_EDA/temp/a_entendimiento/web/conteos_staging.json",
+   "filas": 6
+  },
+  {
+   "archivo": "02_datos/b_exploracion/procesos_por_mes.json",
+   "origen": "00_EDA/temp/b_exploracion/web/procesos_por_mes.json",
+   "filas": 36
+  },
+  {
+   "archivo": "02_datos/b_exploracion/metodo_competencia.json",
+   "origen": "00_EDA/temp/b_exploracion/web/metodo_competencia.json",
+   "filas": 19
+  },
+  {
+   "archivo": "02_datos/b_exploracion/grado_proveedores.json",
+   "origen": "00_EDA/temp/b_exploracion/web/grado_proveedores.json",
+   "filas": 85
+  },
+  {
+   "archivo": "02_datos/b_exploracion/grado_entidades.json",
+   "origen": "00_EDA/temp/b_exploracion/web/grado_entidades.json",
+   "filas": 276
+  },
+  {
+   "archivo": "02_datos/b_exploracion/resumen_bipartito.json",
+   "origen": "00_EDA/temp/b_exploracion/web/resumen_bipartito.json",
+   "filas": 1
+  },
+  {
+   "archivo": "02_datos/b_exploracion/multi_pertenencia.json",
+   "origen": "00_EDA/temp/b_exploracion/web/multi_pertenencia.json",
+   "filas": 1
+  },
+  {
+   "archivo": "02_datos/b_exploracion/hhi_resumen.json",
+   "origen": "00_EDA/temp/b_exploracion/web/hhi_resumen.json",
+   "filas": 1
+  },
+  {
+   "archivo": "02_datos/b_transformaciones/impacto_resolucion.json",
+   "origen": "01_Trans/temp/b_transformaciones/web/impacto_resolucion.json",
+   "filas": 10
+  },
+  {
+   "archivo": "02_datos/c_uso/resumen_artefactos.json",
+   "origen": "01_Trans/temp/c_uso/web/resumen_artefactos.json",
+   "filas": 10
+  },
+  {
+   "archivo": "02_datos/c_uso/grado_coparticipacion.json",
+   "origen": "01_Trans/temp/c_uso/web/grado_coparticipacion.json",
+   "filas": 990
+  }
+ ],
+ "04_clustering": [
+  {
+   "archivo": "04_clustering/b_kmeans/curvas_k.json",
+   "origen": "02_Clustering/temp/b_kmeans/web/curvas_k.json",
+   "filas": 18
+  },
+  {
+   "archivo": "04_clustering/b_kmeans/perfiles_kmeans.json",
+   "origen": "02_Clustering/temp/b_kmeans/web/perfiles_kmeans.json",
+   "filas": 8
+  },
+  {
+   "archivo": "04_clustering/c_densidad/grid_dbscan.json",
+   "origen": "02_Clustering/temp/c_densidad/web/grid_dbscan.json",
+   "filas": 30
+  },
+  {
+   "archivo": "04_clustering/c_densidad/grid_hdbscan.json",
+   "origen": "02_Clustering/temp/c_densidad/web/grid_hdbscan.json",
+   "filas": 48
+  },
+  {
+   "archivo": "04_clustering/e_analisis/tecnicas.json",
+   "origen": "02_Clustering/temp/e_analisis/web/tecnicas.json",
+   "filas": 8
+  },
+  {
+   "archivo": "04_clustering/e_analisis/tipologias.json",
+   "origen": "02_Clustering/temp/e_analisis/web/tipologias.json",
+   "filas": 8
+  },
+  {
+   "archivo": "04_clustering/e_analisis/ari_metodos.json",
+   "origen": "02_Clustering/temp/e_analisis/web/ari_metodos.json",
+   "filas": 8
+  },
+  {
+   "archivo": "04_clustering/e_analisis/cautivas_umbral.json",
+   "origen": "02_Clustering/temp/e_analisis/web/cautivas_umbral.json",
+   "filas": 3
+  },
+  {
+   "archivo": "04_clustering/e_analisis/cautivas_por_tipologia.json",
+   "origen": "02_Clustering/temp/e_analisis/web/cautivas_por_tipologia.json",
+   "filas": 4
+  },
+  {
+   "archivo": "04_clustering/e_analisis/atienden_cautivas.json",
+   "origen": "02_Clustering/temp/e_analisis/web/atienden_cautivas.json",
+   "filas": 5
+  },
+  {
+   "archivo": "04_clustering/e_analisis/consenso_outliers.json",
+   "origen": "02_Clustering/temp/e_analisis/web/consenso_outliers.json",
+   "filas": 6
+  }
+ ],
+ "05_recomendacion": [
+  {
+   "archivo": "05_recomendacion/d_als/grilla_als.json",
+   "origen": "03_Recomend/temp/d_als/web/grilla_als.json",
+   "filas": 27
+  },
+  {
+   "archivo": "05_recomendacion/e_hibrido/peso_hibrido.json",
+   "origen": "03_Recomend/temp/e_hibrido/web/peso_hibrido.json",
+   "filas": 11
+  },
+  {
+   "archivo": "05_recomendacion/e_hibrido/comparacion_test.json",
+   "origen": "03_Recomend/temp/e_hibrido/web/comparacion_test.json",
+   "filas": 8
+  },
+  {
+   "archivo": "05_recomendacion/e_hibrido/ndcg_por_tramo.json",
+   "origen": "03_Recomend/temp/e_hibrido/web/ndcg_por_tramo.json",
+   "filas": 16
+  },
+  {
+   "archivo": "05_recomendacion/f_analisis/sustitutos_resumen.json",
+   "origen": "03_Recomend/temp/f_analisis/web/sustitutos_resumen.json",
+   "filas": 3
+  },
+  {
+   "archivo": "05_recomendacion/f_analisis/sustitutos_por_familia.json",
+   "origen": "03_Recomend/temp/f_analisis/web/sustitutos_por_familia.json",
+   "filas": 8
+  },
+  {
+   "archivo": "05_recomendacion/f_analisis/pq1_alternativas.json",
+   "origen": "03_Recomend/temp/f_analisis/web/pq1_alternativas.json",
+   "filas": 2
+  },
+  {
+   "archivo": "05_recomendacion/f_analisis/afinidades_inusuales.json",
+   "origen": "03_Recomend/temp/f_analisis/web/afinidades_inusuales.json",
+   "filas": 5
+  }
+ ],
+ "06_pagerank": [
+  {
+   "archivo": "06_pagerank/b_pagerank/pagerank_damping_web.json",
+   "origen": "04_PageRank/temp/b_pagerank/web/pagerank_damping_web.json",
+   "filas": 2800
+  },
+  {
+   "archivo": "06_pagerank/b_pagerank/sensibilidad_damping.json",
+   "origen": "04_PageRank/temp/b_pagerank/web/sensibilidad_damping.json",
+   "filas": 14
+  },
+  {
+   "archivo": "06_pagerank/c_hits/cuadrantes.json",
+   "origen": "04_PageRank/temp/c_hits/web/cuadrantes.json",
+   "filas": 4
+  },
+  {
+   "archivo": "06_pagerank/d_analisis/correlaciones.json",
+   "origen": "04_PageRank/temp/d_analisis/web/correlaciones.json",
+   "filas": 11
+  },
+  {
+   "archivo": "06_pagerank/d_analisis/por_tipologia.json",
+   "origen": "04_PageRank/temp/d_analisis/web/por_tipologia.json",
+   "filas": 10
+  },
+  {
+   "archivo": "06_pagerank/d_analisis/cautividad.json",
+   "origen": "04_PageRank/temp/d_analisis/web/cautividad.json",
+   "filas": 2
+  },
+  {
+   "archivo": "06_pagerank/d_analisis/contraste_monto.json",
+   "origen": "04_PageRank/temp/d_analisis/web/contraste_monto.json",
+   "filas": 3
+  },
+  {
+   "archivo": "06_pagerank/d_analisis/centralidad.json",
+   "origen": "04_PageRank/temp/d_analisis/web/centralidad_web (columnas del gráfico)",
+   "filas": 3000
+  }
+ ],
+ "07_comunidades": [
+  {
+   "archivo": "07_comunidades/a_grafo/barrido_nucleo.json",
+   "origen": "05_Comunidad/temp/a_grafo/web/barrido_nucleo.json",
+   "filas": 32
+  },
+  {
+   "archivo": "07_comunidades/a_grafo/resumen_grafo.json",
+   "origen": "05_Comunidad/temp/a_grafo/web/resumen_grafo.json",
+   "filas": 13
+  },
+  {
+   "archivo": "07_comunidades/b_particion/louvain_gamma.json",
+   "origen": "05_Comunidad/temp/b_particion/web/louvain_gamma.json",
+   "filas": 10
+  },
+  {
+   "archivo": "07_comunidades/b_particion/referencias.json",
+   "origen": "05_Comunidad/temp/b_particion/web/referencias.json",
+   "filas": 8
+  },
+  {
+   "archivo": "07_comunidades/b_particion/comparacion.json",
+   "origen": "05_Comunidad/temp/b_particion/web/comparacion.json",
+   "filas": 2
+  },
+  {
+   "archivo": "07_comunidades/b_particion/girvan_newman.json",
+   "origen": "05_Comunidad/temp/b_particion/web/girvan_newman.json",
+   "filas": 29
+  },
+  {
+   "archivo": "07_comunidades/c_solapadas/bigclam_delta_web.json",
+   "origen": "05_Comunidad/temp/c_solapadas/web/bigclam_delta_web.json",
+   "filas": 600
+  },
+  {
+   "archivo": "07_comunidades/c_solapadas/eleccion_delta.json",
+   "origen": "05_Comunidad/temp/c_solapadas/web/eleccion_delta.json",
+   "filas": 6
+  },
+  {
+   "archivo": "07_comunidades/c_solapadas/eleccion_k.json",
+   "origen": "05_Comunidad/temp/c_solapadas/web/eleccion_k.json",
+   "filas": 11
+  },
+  {
+   "archivo": "07_comunidades/d_escalabilidad/ajuste_costo.json",
+   "origen": "05_Comunidad/temp/d_escalabilidad/web/ajuste_costo.json",
+   "filas": 5
+  },
+  {
+   "archivo": "07_comunidades/d_escalabilidad/resumen_metodos.json",
+   "origen": "05_Comunidad/temp/d_escalabilidad/web/resumen_metodos.json",
+   "filas": 6
+  },
+  {
+   "archivo": "07_comunidades/d_escalabilidad/gn_extrapolacion.json",
+   "origen": "05_Comunidad/temp/d_escalabilidad/web/gn_extrapolacion.json",
+   "filas": 2
+  },
+  {
+   "archivo": "07_comunidades/d_escalabilidad/betweenness_aprox.json",
+   "origen": "05_Comunidad/temp/d_escalabilidad/web/betweenness_aprox.json",
+   "filas": 4
+  },
+  {
+   "archivo": "07_comunidades/e_analisis/comunidades_web_nodos.json",
+   "origen": "05_Comunidad/temp/e_analisis/web/comunidades_web_nodos.json",
+   "filas": 34
+  },
+  {
+   "archivo": "07_comunidades/e_analisis/comunidades_web_aristas.json",
+   "origen": "05_Comunidad/temp/e_analisis/web/comunidades_web_aristas.json",
+   "filas": 164
+  },
+  {
+   "archivo": "07_comunidades/e_analisis/explica.json",
+   "origen": "05_Comunidad/temp/e_analisis/web/explica.json",
+   "filas": 40
+  },
+  {
+   "archivo": "07_comunidades/e_analisis/perfil_comunidades.json",
+   "origen": "05_Comunidad/temp/e_analisis/web/perfil_comunidades.json",
+   "filas": 34
+  },
+  {
+   "archivo": "07_comunidades/e_analisis/hubs_vs_nucleo.json",
+   "origen": "05_Comunidad/temp/e_analisis/web/hubs_vs_nucleo.json",
+   "filas": 2
+  },
+  {
+   "archivo": "07_comunidades/b_particion/gamma_comunidades.json",
+   "origen": "05_Comunidad/temp/b_particion/web/particion_gamma_web + e_analisis/nodos_web (agregado por γ)",
+   "filas": 546
+  },
+  {
+   "archivo": "07_comunidades/e_analisis/grupos_cerrados.json",
+   "origen": "05_Comunidad/temp/e_analisis/web/grupos_cerrados (sin miembros)",
+   "filas": 11
+  }
+ ],
+ "08_representacion": [
+  {
+   "archivo": "08_representacion/a_grafo/umbral_hub.json",
+   "origen": "06_Representacion/temp/a_grafo/web/umbral_hub.json",
+   "filas": 4
+  },
+  {
+   "archivo": "08_representacion/a_grafo/por_anio.json",
+   "origen": "06_Representacion/temp/a_grafo/web/por_anio.json",
+   "filas": 3
+  },
+  {
+   "archivo": "08_representacion/b_node2vec/perfil_pq.json",
+   "origen": "06_Representacion/temp/b_node2vec/web/perfil_pq.json",
+   "filas": 11
+  },
+  {
+   "archivo": "08_representacion/b_node2vec/dimension.json",
+   "origen": "06_Representacion/temp/b_node2vec/web/dimension.json",
+   "filas": 3
+  },
+  {
+   "archivo": "08_representacion/c_proyeccion/estabilidad_k.json",
+   "origen": "06_Representacion/temp/c_proyeccion/web/estabilidad_k.json",
+   "filas": 7
+  },
+  {
+   "archivo": "08_representacion/c_proyeccion/convergencia.json",
+   "origen": "06_Representacion/temp/c_proyeccion/web/convergencia.json",
+   "filas": 70
+  },
+  {
+   "archivo": "08_representacion/c_proyeccion/cruce_v.json",
+   "origen": "06_Representacion/temp/c_proyeccion/web/cruce_v.json",
+   "filas": 8
+  },
+  {
+   "archivo": "08_representacion/c_proyeccion/perfiles_latentes.json",
+   "origen": "06_Representacion/temp/c_proyeccion/web/perfiles_latentes.json",
+   "filas": 6
+  },
+  {
+   "archivo": "08_representacion/d_enlaces/resultados.json",
+   "origen": "06_Representacion/temp/d_enlaces/web/resultados.json",
+   "filas": 20
+  },
+  {
+   "archivo": "08_representacion/d_enlaces/precision_top.json",
+   "origen": "06_Representacion/temp/d_enlaces/web/precision_top.json",
+   "filas": 5
+  },
+  {
+   "archivo": "08_representacion/d_enlaces/por_decil.json",
+   "origen": "06_Representacion/temp/d_enlaces/web/por_decil.json",
+   "filas": 10
+  },
+  {
+   "archivo": "08_representacion/d_enlaces/por_tipo_negativo.json",
+   "origen": "06_Representacion/temp/d_enlaces/web/por_tipo_negativo.json",
+   "filas": 2
+  },
+  {
+   "archivo": "08_representacion/d_enlaces/top_pares.json",
+   "origen": "06_Representacion/temp/d_enlaces/web/top_pares.json",
+   "filas": 30
+  },
+  {
+   "archivo": "08_representacion/c_proyeccion/umap.json",
+   "origen": "06_Representacion/temp/c_proyeccion/web/umap_web + nodos_web (columnar)",
+   "filas": 1
+  }
+ ],
+ "09_analisis": [
+  {
+   "archivo": "09_analisis/a_recuento/desempeno.json",
+   "origen": "07_Analisis/temp/a_recuento/web/desempeno.json",
+   "filas": 8
+  },
+  {
+   "archivo": "09_analisis/b_hallazgos/respuestas.json",
+   "origen": "07_Analisis/temp/b_hallazgos/web/respuestas.json",
+   "filas": 3
+  },
+  {
+   "archivo": "09_analisis/c_insights/valor_tecnicas.json",
+   "origen": "07_Analisis/temp/c_insights/web/valor_tecnicas.json",
+   "filas": 17
+  },
+  {
+   "archivo": "09_analisis/c_insights/convergencia.json",
+   "origen": "07_Analisis/temp/c_insights/web/convergencia.json",
+   "filas": 21
+  },
+  {
+   "archivo": "09_analisis/c_insights/escalabilidad.json",
+   "origen": "07_Analisis/temp/c_insights/web/escalabilidad.json",
+   "filas": 11
+  },
+  {
+   "archivo": "09_analisis/c_insights/proyeccion.json",
+   "origen": "07_Analisis/temp/c_insights/web/proyeccion.json",
+   "filas": 5
+  },
+  {
+   "archivo": "09_analisis/c_insights/senales.json",
+   "origen": "07_Analisis/temp/c_insights/web/senales.json",
+   "filas": 6
+  },
+  {
+   "archivo": "09_analisis/c_insights/consorcios.json",
+   "origen": "07_Analisis/temp/c_insights/web/consorcios.json",
+   "filas": 2
+  }
+ ]
+}

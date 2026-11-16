@@ -83,9 +83,13 @@ docker compose exec -T -u jovyan jupyter jupyter nbconvert --to notebook --execu
 
 echo "== 7. Análisis =="
 
-# 8. Análisis
+# 7. Análisis
 docker compose exec -T -u jovyan jupyter jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=$TIMEOUT 07_Analisis/a_recuento.ipynb
 docker compose exec -T -u jovyan jupyter jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=$TIMEOUT 07_Analisis/b_hallazgos.ipynb
 docker compose exec -T -u jovyan jupyter jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=$TIMEOUT 07_Analisis/c_insights.ipynb
+
+echo "== 8. Datos para la web =="
+
+python data/exportar.py
 
 echo "== Pipeline terminado =="

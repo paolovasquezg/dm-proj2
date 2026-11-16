@@ -1,0 +1,98 @@
+[
+ {
+  "tramo":"1-5",
+  "entidades":331,
+  "modelo":"popularidad regional",
+  "ndcg@10":0.0748
+ },
+ {
+  "tramo":"1-5",
+  "entidades":331,
+  "modelo":"ALS",
+  "ndcg@10":0.0735
+ },
+ {
+  "tramo":"1-5",
+  "entidades":331,
+  "modelo":"contenido (HNSW)",
+  "ndcg@10":0.0224
+ },
+ {
+  "tramo":"1-5",
+  "entidades":331,
+  "modelo":"híbrido",
+  "ndcg@10":0.0732
+ },
+ {
+  "tramo":"6-20",
+  "entidades":727,
+  "modelo":"popularidad regional",
+  "ndcg@10":0.0975
+ },
+ {
+  "tramo":"6-20",
+  "entidades":727,
+  "modelo":"ALS",
+  "ndcg@10":0.1115
+ },
+ {
+  "tramo":"6-20",
+  "entidades":727,
+  "modelo":"contenido (HNSW)",
+  "ndcg@10":0.0345
+ },
+ {
+  "tramo":"6-20",
+  "entidades":727,
+  "modelo":"híbrido",
+  "ndcg@10":0.1203
+ },
+ {
+  "tramo":"21-100",
+  "entidades":858,
+  "modelo":"popularidad regional",
+  "ndcg@10":0.0712
+ },
+ {
+  "tramo":"21-100",
+  "entidades":858,
+  "modelo":"ALS",
+  "ndcg@10":0.0874
+ },
+ {
+  "tramo":"21-100",
+  "entidades":858,
+  "modelo":"contenido (HNSW)",
+  "ndcg@10":0.0374
+ },
+ {
+  "tramo":"21-100",
+  "entidades":858,
+  "modelo":"híbrido",
+  "ndcg@10":0.0915
+ },
+ {
+  "tramo":"100+",
+  "entidades":196,
+  "modelo":"popularidad regional",
+  "ndcg@10":0.0697
+ },
+ {
+  "tramo":"100+",
+  "entidades":196,
+  "modelo":"ALS",
+  "ndcg@10":0.0954
+ },
+ {
+  "tramo":"100+",
+  "entidades":196,
+  "modelo":"contenido (HNSW)",
+  "ndcg@10":0.0617
+ },
+ {
+  "tramo":"100+",
+  "entidades":196,
+  "modelo":"híbrido",
+  "ndcg@10":0.0991
+ }
+]

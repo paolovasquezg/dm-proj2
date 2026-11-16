@@ -1,0 +1,92 @@
+[
+ {
+  "sujeto":"entidad",
+  "tipologia":"compra sin competencia",
+  "actores":234,
+  "pct_pr_med":0.657,
+  "pct_hits_med":0.704,
+  "en_top_pr":6,
+  "en_top_hits":4
+ },
+ {
+  "sujeto":"entidad",
+  "tipologia":"compradoras de obras",
+  "actores":680,
+  "pct_pr_med":0.48,
+  "pct_hits_med":0.295,
+  "en_top_pr":0,
+  "en_top_hits":0
+ },
+ {
+  "sujeto":"entidad",
+  "tipologia":"compradoras pequeñas",
+  "actores":909,
+  "pct_pr_med":0.328,
+  "pct_hits_med":0.463,
+  "en_top_pr":0,
+  "en_top_hits":0
+ },
+ {
+  "sujeto":"entidad",
+  "tipologia":"fuera del clustering (< 5 procesos)",
+  "actores":296,
+  "pct_pr_med":0.066,
+  "pct_hits_med":0.098,
+  "en_top_pr":0,
+  "en_top_hits":0
+ },
+ {
+  "sujeto":"entidad",
+  "tipologia":"grandes diversificadas",
+  "actores":873,
+  "pct_pr_med":0.826,
+  "pct_hits_med":0.786,
+  "en_top_pr":24,
+  "en_top_hits":26
+ },
+ {
+  "sujeto":"proveedor",
+  "tipologia":"contratistas de obras",
+  "actores":1021,
+  "pct_pr_med":0.931,
+  "pct_hits_med":0.747,
+  "en_top_pr":12,
+  "en_top_hits":44
+ },
+ {
+  "sujeto":"proveedor",
+  "tipologia":"esporádico (fuera del clustering)",
+  "actores":72700,
+  "pct_pr_med":0.423,
+  "pct_hits_med":0.439,
+  "en_top_pr":0,
+  "en_top_hits":76
+ },
+ {
+  "sujeto":"proveedor",
+  "tipologia":"ganadores sin competencia",
+  "actores":1650,
+  "pct_pr_med":0.889,
+  "pct_hits_med":0.813,
+  "en_top_pr":13,
+  "en_top_hits":13
+ },
+ {
+  "sujeto":"proveedor",
+  "tipologia":"grandes multicliente",
+  "actores":2394,
+  "pct_pr_med":0.984,
+  "pct_hits_med":0.941,
+  "en_top_pr":804,
+  "en_top_hits":441
+ },
+ {
+  "sujeto":"proveedor",
+  "tipologia":"típicos de pocos clientes",
+  "actores":8252,
+  "pct_pr_med":0.91,
+  "pct_hits_med":0.836,
+  "en_top_pr":32,
+  "en_top_hits":287
+ }
+]

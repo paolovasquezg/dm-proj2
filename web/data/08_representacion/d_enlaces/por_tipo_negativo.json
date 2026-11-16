@@ -1,0 +1,12 @@
+[
+ {
+  "negativos":"neg al azar",
+  "roc_auc":0.8821,
+  "roc_auc_adamic_adar":0.8307
+ },
+ {
+  "negativos":"neg 2 saltos",
+  "roc_auc":0.6036,
+  "roc_auc_adamic_adar":0.4294
+ }
+]
