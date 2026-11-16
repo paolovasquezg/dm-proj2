@@ -95,3 +95,9 @@ Levanta el cluster de Spark y Jupyter con Docker
 - 06_Representacion/c_proyeccion.ipynb
 - 06_Representacion/d_enlaces.ipynb
 - 06_Representacion/e_analisis.ipynb
+
+### 7. Análisis
+
+- 07_Analisis/a_recuento.ipynb
+- 07_Analisis/b_hallazgos.ipynb
+- 07_Analisis/c_insights.ipynb
