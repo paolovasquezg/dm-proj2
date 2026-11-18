@@ -136,3 +136,22 @@ python3 -m http.server 8001
 ```
 
 Abrir `http://localhost:8001/reporte.html`
+
+
+## Registro de aportes
+
+| Sección | Actividades | Encargado |
+|---|---|---|
+| Entorno | Docker (Spark + Jupyter) y `pipeline.sh` | Paolo Vásquez, Oscar Chu |
+| 0. EDA | Entendimiento, exploración y justificación de los datos | Paolo Vásquez, Oscar Chu |
+| 1. Transformaciones | Capas staging, bronze y final, y recuento | Paolo Vásquez, Oscar Chu |
+| 2. Clustering | K-means, HDBSCAN y jerárquico; cautividad | Paolo Vásquez, Oscar Chu |
+| 3. Recomendación | Vecindario, contenido, ALS e híbrido; sustitutos | Paolo Vásquez, Oscar Chu |
+| 4. PageRank y HITS | Grafo, PageRank, HITS y centralidad | Paolo Vásquez, Oscar Chu |
+| 5. Comunidades | Louvain, Girvan-Newman, BigCLAM y escalabilidad | Paolo Vásquez, Oscar Chu |
+| 6. Representación | Node2Vec, SVD, UMAP y predicción de enlaces | Josue Velo, Paolo Vásquez |
+| 7. Análisis | Desempeño, hallazgos e insights | Paolo Vásquez |
+| 8. Exportación | JSON para `web/data` | Paolo Vásquez |
+| Web | Sitio interactivo y despliegue | Paolo Vásquez |
+| Reporte | `reporte.html` | Paolo Vásquez |
+
