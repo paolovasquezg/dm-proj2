@@ -8,16 +8,12 @@
   "count":11
  },
  {
-  "grado":32,
-  "count":7
- },
- {
   "grado":141,
   "count":1
  },
  {
-  "grado":40,
-  "count":2
+  "grado":32,
+  "count":7
  },
  {
   "grado":59,
@@ -34,6 +30,10 @@
  {
   "grado":49,
   "count":1
+ },
+ {
+  "grado":40,
+  "count":2
  },
  {
   "grado":17,
@@ -76,12 +76,12 @@
   "count":26
  },
  {
-  "grado":25,
-  "count":12
- },
- {
   "grado":19,
   "count":36
+ },
+ {
+  "grado":25,
+  "count":12
  },
  {
   "grado":34,
@@ -128,24 +128,24 @@
   "count":2
  },
  {
-  "grado":21,
-  "count":20
- },
- {
   "grado":20,
   "count":35
+ },
+ {
+  "grado":21,
+  "count":20
  },
  {
   "grado":97,
   "count":1
  },
  {
-  "grado":2,
-  "count":5655
- },
- {
   "grado":26,
   "count":22
+ },
+ {
+  "grado":2,
+  "count":5655
  },
  {
   "grado":42,
@@ -200,12 +200,12 @@
   "count":107
  },
  {
-  "grado":33,
-  "count":15
- },
- {
   "grado":29,
   "count":13
+ },
+ {
+  "grado":33,
+  "count":15
  },
  {
   "grado":93,
@@ -224,12 +224,12 @@
   "count":1
  },
  {
-  "grado":9,
-  "count":218
- },
- {
   "grado":22,
   "count":28
+ },
+ {
+  "grado":9,
+  "count":218
  },
  {
   "grado":76,
@@ -272,16 +272,16 @@
   "count":1
  },
  {
+  "grado":5,
+  "count":796
+ },
+ {
   "grado":8,
   "count":273
  },
  {
   "grado":4,
   "count":1400
- },
- {
-  "grado":5,
-  "count":796
  },
  {
   "grado":15,
@@ -312,28 +312,28 @@
   "count":2
  },
  {
-  "grado":18,
-  "count":32
- },
- {
   "grado":38,
   "count":9
  },
  {
-  "grado":46,
-  "count":1
+  "grado":18,
+  "count":32
  },
  {
   "grado":87,
   "count":1
  },
  {
-  "grado":39,
-  "count":7
+  "grado":46,
+  "count":1
  },
  {
   "grado":41,
   "count":6
+ },
+ {
+  "grado":39,
+  "count":7
  },
  {
   "grado":126,

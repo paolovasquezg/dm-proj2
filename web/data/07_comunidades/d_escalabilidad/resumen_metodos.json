@@ -4,41 +4,41 @@
   "corre_en":"local",
   "grafo":"núcleo",
   "Q":0.8700513458,
-  "seg":0.7132561445
+  "seg":0.5612017155
  },
  {
   "metodo":"espectral k=28",
   "corre_en":"local",
   "grafo":"núcleo",
   "Q":0.8432983733,
-  "seg":3.1442019939
+  "seg":2.1051337719
  },
  {
   "metodo":"bigclam K=100",
   "corre_en":"local",
   "grafo":"núcleo",
   "Q":null,
-  "seg":2.9100441933
+  "seg":2.9653844833
  },
  {
   "metodo":"LPA",
   "corre_en":"Spark",
   "grafo":"completo (Spark)",
   "Q":0.625068358,
-  "seg":52.1
+  "seg":56.5
  },
  {
   "metodo":"LPA",
   "corre_en":"Spark",
   "grafo":"sin hubs (Spark)",
   "Q":0.6800728366,
-  "seg":46.1
+  "seg":66.5
  },
  {
   "metodo":"LPA",
   "corre_en":"local",
   "grafo":"núcleo (local)",
   "Q":0.7835817119,
-  "seg":0.4
+  "seg":0.3
  }
 ]

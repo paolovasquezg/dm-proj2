@@ -3,160 +3,160 @@
   "modelo":"random forest",
   "config":"p0.25_q4",
   "operador":"hadamard",
-  "roc_auc":0.7429,
-  "pr_auc":0.7207,
-  "tiempo_s":42.9857
+  "roc_auc":0.7433,
+  "pr_auc":0.7204,
+  "tiempo_s":42.8984
  },
  {
   "modelo":"random forest",
   "config":"p1_q1",
   "operador":"hadamard",
-  "roc_auc":0.7355,
-  "pr_auc":0.71,
-  "tiempo_s":43.2611
+  "roc_auc":0.7366,
+  "pr_auc":0.7109,
+  "tiempo_s":43.1607
  },
  {
   "modelo":"random forest",
   "config":"p4_q0.25",
   "operador":"hadamard",
-  "roc_auc":0.7261,
-  "pr_auc":0.699,
-  "tiempo_s":43.7555
+  "roc_auc":0.7267,
+  "pr_auc":0.7006,
+  "tiempo_s":44.0189
  },
  {
   "modelo":"logística",
   "config":"p0.25_q4",
   "operador":"hadamard",
-  "roc_auc":0.7153,
-  "pr_auc":0.6898,
-  "tiempo_s":0.3534
+  "roc_auc":0.7161,
+  "pr_auc":0.6899,
+  "tiempo_s":0.3311
  },
  {
   "modelo":"logística",
   "config":"p1_q1",
   "operador":"hadamard",
-  "roc_auc":0.7033,
-  "pr_auc":0.6683,
-  "tiempo_s":0.3846
+  "roc_auc":0.7043,
+  "pr_auc":0.6694,
+  "tiempo_s":0.3603
  },
  {
   "modelo":"logística",
   "config":"p4_q0.25",
   "operador":"hadamard",
-  "roc_auc":0.6879,
-  "pr_auc":0.6467,
-  "tiempo_s":0.3673
+  "roc_auc":0.6892,
+  "pr_auc":0.6487,
+  "tiempo_s":0.366
  },
  {
   "modelo":"base",
   "config":"vecinos_comunes",
   "operador":"—",
-  "roc_auc":0.6424,
-  "pr_auc":0.6433,
+  "roc_auc":0.6448,
+  "pr_auc":0.6446,
   "tiempo_s":0.0
  },
  {
   "modelo":"base",
   "config":"adamic_adar",
   "operador":"—",
-  "roc_auc":0.63,
-  "pr_auc":0.6367,
+  "roc_auc":0.6323,
+  "pr_auc":0.638,
   "tiempo_s":0.0
  },
  {
   "modelo":"logística",
   "config":"svd",
   "operador":"hadamard",
-  "roc_auc":0.6525,
-  "pr_auc":0.6219,
-  "tiempo_s":0.9317
+  "roc_auc":0.6544,
+  "pr_auc":0.6235,
+  "tiempo_s":0.9236
  },
  {
   "modelo":"base",
   "config":"coseno svd",
   "operador":"—",
-  "roc_auc":0.6523,
-  "pr_auc":0.5998,
+  "roc_auc":0.6526,
+  "pr_auc":0.6,
   "tiempo_s":0.0
  },
  {
   "modelo":"logística",
   "config":"svd",
   "operador":"l1",
-  "roc_auc":0.6072,
-  "pr_auc":0.5756,
-  "tiempo_s":0.5899
+  "roc_auc":0.604,
+  "pr_auc":0.5722,
+  "tiempo_s":0.5813
+ },
+ {
+  "modelo":"logística",
+  "config":"p4_q0.25",
+  "operador":"l2",
+  "roc_auc":0.6063,
+  "pr_auc":0.5627,
+  "tiempo_s":0.3072
  },
  {
   "modelo":"logística",
   "config":"p4_q0.25",
   "operador":"l1",
-  "roc_auc":0.605,
-  "pr_auc":0.5624,
-  "tiempo_s":0.3038
- },
- {
-  "modelo":"logística",
-  "config":"p4_q0.25",
-  "operador":"l2",
-  "roc_auc":0.6062,
-  "pr_auc":0.562,
-  "tiempo_s":0.3007
+  "roc_auc":0.6044,
+  "pr_auc":0.5621,
+  "tiempo_s":0.3144
  },
  {
   "modelo":"logística",
   "config":"p1_q1",
   "operador":"l2",
-  "roc_auc":0.5919,
-  "pr_auc":0.5602,
-  "tiempo_s":0.2852
+  "roc_auc":0.5921,
+  "pr_auc":0.5608,
+  "tiempo_s":0.2758
  },
  {
   "modelo":"base",
   "config":"coseno p1_q1",
   "operador":"—",
-  "roc_auc":0.6195,
-  "pr_auc":0.5587,
+  "roc_auc":0.6207,
+  "pr_auc":0.5598,
   "tiempo_s":0.0
  },
  {
   "modelo":"logística",
   "config":"p1_q1",
   "operador":"l1",
-  "roc_auc":0.5898,
-  "pr_auc":0.5561,
-  "tiempo_s":0.2819
+  "roc_auc":0.5905,
+  "pr_auc":0.5575,
+  "tiempo_s":0.2746
  },
  {
   "modelo":"logística",
   "config":"p0.25_q4",
   "operador":"l1",
-  "roc_auc":0.5666,
-  "pr_auc":0.5527,
-  "tiempo_s":0.2628
+  "roc_auc":0.568,
+  "pr_auc":0.5546,
+  "tiempo_s":0.2627
  },
  {
   "modelo":"logística",
   "config":"p0.25_q4",
   "operador":"l2",
-  "roc_auc":0.5687,
-  "pr_auc":0.5523,
-  "tiempo_s":0.2663
+  "roc_auc":0.5703,
+  "pr_auc":0.5541,
+  "tiempo_s":0.2677
  },
  {
   "modelo":"base",
   "config":"jaccard",
   "operador":"—",
-  "roc_auc":0.5872,
-  "pr_auc":0.5406,
+  "roc_auc":0.5895,
+  "pr_auc":0.5423,
   "tiempo_s":0.0
  },
  {
   "modelo":"logística",
   "config":"svd",
   "operador":"l2",
-  "roc_auc":0.4869,
-  "pr_auc":0.4857,
-  "tiempo_s":0.3644
+  "roc_auc":0.4884,
+  "pr_auc":0.486,
+  "tiempo_s":0.4203
  }
 ]

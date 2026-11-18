@@ -2288,12 +2288,12 @@
   "nodos":12
  },
  {
-  "grado":368,
-  "nodos":6
- },
- {
   "grado":130,
   "nodos":36
+ },
+ {
+  "grado":368,
+  "nodos":6
  },
  {
   "grado":219,

@@ -59,8 +59,8 @@
   "parte":"VI",
   "tecnica":"Enlaces (random forest)",
   "metrica":"PR-AUC test 2025",
-  "valor":0.7207,
+  "valor":0.7204,
   "referencia":"Adamic-Adar",
-  "valor_ref":0.6367
+  "valor_ref":0.638
  }
 ]

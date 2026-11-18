@@ -6,7 +6,7 @@
   "monto_mediano":217851,
   "postor_unico":0.073,
   "es_directa":0.07,
-  "coseno_contenido":0.8270000219,
+  "coseno_contenido":0.827,
   "pct_prov_una_entidad":92.3,
   "pct_consorcio":64.9
  },
@@ -17,7 +17,7 @@
   "monto_mediano":188100,
   "postor_unico":0.063,
   "es_directa":0.053,
-  "coseno_contenido":0.6579999924,
+  "coseno_contenido":0.658,
   "pct_prov_una_entidad":81.4,
   "pct_consorcio":54.6
  },
@@ -28,7 +28,7 @@
   "monto_mediano":188832,
   "postor_unico":0.07,
   "es_directa":0.063,
-  "coseno_contenido":0.6200000048,
+  "coseno_contenido":0.62,
   "pct_prov_una_entidad":76.7,
   "pct_consorcio":50.6
  },
@@ -39,7 +39,7 @@
   "monto_mediano":209800,
   "postor_unico":0.118,
   "es_directa":0.073,
-  "coseno_contenido":0.4469999969,
+  "coseno_contenido":0.447,
   "pct_prov_una_entidad":52.2,
   "pct_consorcio":26.9
  },
@@ -50,7 +50,7 @@
   "monto_mediano":208178,
   "postor_unico":0.115,
   "es_directa":0.072,
-  "coseno_contenido":0.4589999914,
+  "coseno_contenido":0.459,
   "pct_prov_una_entidad":53.6,
   "pct_consorcio":28.3
  }

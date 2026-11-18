@@ -1,6 +1,7 @@
 [
  {
   "familia":"7214",
+  "nombre":"Construcción pesada (obras civiles)",
   "als":35.8,
   "azar (misma familia)":2.3,
   "contenido":36.6,
@@ -8,6 +9,7 @@
  },
  {
   "familia":"8110",
+  "nombre":"Servicios profesionales de ingeniería",
   "als":33.4,
   "azar (misma familia)":8.3,
   "contenido":44.5,
@@ -15,6 +17,7 @@
  },
  {
   "familia":"7212",
+  "nombre":"Construcción de edificaciones no residenciales",
   "als":20.9,
   "azar (misma familia)":3.6,
   "contenido":24.6,
@@ -22,6 +25,7 @@
  },
  {
   "familia":"1510",
+  "nombre":"Combustibles",
   "als":42.5,
   "azar (misma familia)":1.5,
   "contenido":38.3,
@@ -29,6 +33,7 @@
  },
  {
   "familia":"7215",
+  "nombre":"Construcción especializada (instalaciones)",
   "als":14.8,
   "azar (misma familia)":2.8,
   "contenido":24.5,
@@ -36,6 +41,7 @@
  },
  {
   "familia":"3011",
+  "nombre":"Concreto, cemento y yeso",
   "als":42.1,
   "azar (misma familia)":8.7,
   "contenido":62.5,
@@ -43,6 +49,7 @@
  },
  {
   "familia":"9210",
+  "nombre":"Orden público y seguridad",
   "als":34.2,
   "azar (misma familia)":20.9,
   "contenido":54.4,
@@ -50,6 +57,7 @@
  },
  {
   "familia":"4111",
+  "nombre":"Instrumentos de medición y ensayo",
   "als":45.8,
   "azar (misma familia)":12.7,
   "contenido":54.1,

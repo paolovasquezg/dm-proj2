@@ -2,18 +2,18 @@
  {
   "grafo":"núcleo",
   "aristas":40957,
-  "seg_por_paso":642.3852944392,
-  "horas_minimo":7.1376143827,
-  "horas_cota_superior":7308.3818067626,
+  "seg_por_paso":607.2224460618,
+  "horas_minimo":6.7469160674,
+  "horas_cota_superior":6908.3360342648,
   "orden_minimo":"~10^0 h",
   "orden_superior":"~10^3 h"
  },
  {
   "grafo":"completo",
   "aristas":1639945,
-  "seg_por_paso":32980231.7390057668,
-  "horas_minimo":366447.0193222863,
-  "horas_cota_superior":15023823927.5621700287,
+  "seg_por_paso":28634234.4268256798,
+  "horas_minimo":318158.1602980631,
+  "horas_cota_superior":13044047104.7501773834,
   "orden_minimo":"~10^5 h",
   "orden_superior":"~10^10 h"
  }

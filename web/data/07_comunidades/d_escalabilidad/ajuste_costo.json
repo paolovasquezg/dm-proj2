@@ -1,27 +1,27 @@
 [
  {
   "metodo":"bigclam",
-  "exponente":2.0579744219,
-  "log_a":-24.4779310725
+  "exponente":2.0410290868,
+  "log_a":-24.3227551467
  },
  {
   "metodo":"espectral",
-  "exponente":1.3923791807,
-  "log_a":-15.079958674
+  "exponente":1.3407254564,
+  "log_a":-14.5682019527
  },
  {
   "metodo":"girvan-newman (1 paso)",
-  "exponente":2.9394413398,
-  "log_a":-24.7524959662
+  "exponente":2.9164021343,
+  "log_a":-24.5641062772
  },
  {
   "metodo":"louvain",
-  "exponente":0.9912967834,
-  "log_a":-11.2191354994
+  "exponente":1.0047849558,
+  "log_a":-11.331544094
  },
  {
   "metodo":"lpa",
-  "exponente":0.7019610872,
-  "log_a":-12.0618534809
+  "exponente":0.7327231138,
+  "log_a":-12.3738603301
  }
 ]

@@ -6,7 +6,7 @@
   "loglik":-218447.3278539325,
   "iteraciones":88,
   "convergio":true,
-  "seg":0.4783494473,
+  "seg":0.5115363598,
   "columnas_vacias":0,
   "supera_piso":true
  },
@@ -17,7 +17,7 @@
   "loglik":-210724.9669853092,
   "iteraciones":53,
   "convergio":true,
-  "seg":0.754137516,
+  "seg":0.6526792049,
   "columnas_vacias":0,
   "supera_piso":true
  },
@@ -28,7 +28,7 @@
   "loglik":-209767.4357738951,
   "iteraciones":58,
   "convergio":true,
-  "seg":1.0546302795,
+  "seg":1.0712382793,
   "columnas_vacias":0,
   "supera_piso":true
  },
@@ -39,7 +39,7 @@
   "loglik":-176062.8011600599,
   "iteraciones":97,
   "convergio":true,
-  "seg":2.0621683598,
+  "seg":2.0436854362,
   "columnas_vacias":0,
   "supera_piso":true
  },
@@ -50,7 +50,7 @@
   "loglik":-201047.7741642708,
   "iteraciones":91,
   "convergio":true,
-  "seg":2.3424065113,
+  "seg":2.3277759552,
   "columnas_vacias":0,
   "supera_piso":true
  },
@@ -61,7 +61,7 @@
   "loglik":-190669.9857138476,
   "iteraciones":72,
   "convergio":true,
-  "seg":2.2927088737,
+  "seg":2.3044071198,
   "columnas_vacias":0,
   "supera_piso":true
  },
@@ -72,7 +72,7 @@
   "loglik":-199738.8644444866,
   "iteraciones":80,
   "convergio":true,
-  "seg":2.8177330494,
+  "seg":2.8340687752,
   "columnas_vacias":0,
   "supera_piso":true
  },
@@ -83,7 +83,7 @@
   "loglik":-151833.1386598122,
   "iteraciones":71,
   "convergio":true,
-  "seg":3.0989069939,
+  "seg":3.0931894779,
   "columnas_vacias":0,
   "supera_piso":true
  },
@@ -94,7 +94,7 @@
   "loglik":-113910.6855977745,
   "iteraciones":95,
   "convergio":true,
-  "seg":4.8216743469,
+  "seg":4.7988510132,
   "columnas_vacias":0,
   "supera_piso":true
  },
@@ -105,7 +105,7 @@
   "loglik":-122138.3332890606,
   "iteraciones":74,
   "convergio":true,
-  "seg":4.4362065792,
+  "seg":4.4494156837,
   "columnas_vacias":0,
   "supera_piso":true
  },
@@ -116,7 +116,7 @@
   "loglik":-101770.2927939022,
   "iteraciones":129,
   "convergio":true,
-  "seg":8.8143441677,
+  "seg":8.7029864788,
   "columnas_vacias":0,
   "supera_piso":true
  }

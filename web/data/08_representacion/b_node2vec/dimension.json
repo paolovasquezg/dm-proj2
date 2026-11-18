@@ -2,16 +2,16 @@
  {
   "dim":32,
   "auc_coseno":0.8788,
-  "tiempo_s":69.8245
+  "tiempo_s":76.4256
  },
  {
   "dim":64,
   "auc_coseno":0.8621,
-  "tiempo_s":144.7467
+  "tiempo_s":144.7067
  },
  {
   "dim":128,
   "auc_coseno":0.853,
-  "tiempo_s":261.1277
+  "tiempo_s":257.7794
  }
 ]
